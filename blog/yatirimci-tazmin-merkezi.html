@@ -18,9 +18,10 @@
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#0f5132">
-<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="../assets/site.webmanifest">
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" type="image/png" href="../assets/img/icon.png">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/blog.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,19 +63,82 @@
 </script>
 </head>
 <body>
-<header class="site">
-  <div class="inner">
-    <a class="logo" href="../index.html">Cepte <span>Portföy</span></a>
-    <nav class="main">
-      <a href="../index.html">Ana Sayfa</a>
-      <a href="../hakkimizda.html">Hakkımızda</a>
-      <a href="../hizmetlerimiz.html">Hizmetlerimiz</a>
-      <a href="../yatirimci-bilgilendirme.html">Yatırımcı Bilgilendirme</a>
-      <a href="index.html">Blog</a>
-      <a href="../iletisim.html">İletişim</a>
-    </nav>
-  </div>
-</header>
+<div class="top-section blog-top">
+<header>
+        <div class="header-container">
+          <div class="header-left">
+            <div class="logo">
+              <a href="../tr/">
+                <img src="../assets/img/logo1.png" alt="Cep Portfoy" />
+              </a>
+            </div>
+
+            <button class="hamburger" aria-label="Toggle menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="header-right">
+            <nav class="nav-wrapper">
+              <div class="mobile-header">
+                <button class="close-menu" aria-label="Close menu">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <ul class="nav-menu">
+                <li><a href="../tr/">Ana Sayfa</a></li>
+                <li><a href="../tr/pages/about.html">Hakkımızda</a></li>
+                <li class="has-submenu">
+                  <a href="#">Şirket Profili</a>
+                  <ul class="sub-menu">
+                    <li><a href="../tr/pages/terms.html">Şartlar ve Koşullar</a></li>
+                    <li>
+                      <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../tr/pages/contact-us.html">İletişim</a></li>
+                <li class="current"><a href="index.html">Blog</a></li>
+              </ul>
+
+              <a
+                href="https://appzone.ceportfoy.net/#/auth/register"
+                class="cta-button"
+                >Başlayın</a
+              >
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-button" id="languageBtn">
+                <img
+                  src="https://flagcdn.com/w40/tr.png"
+                  alt="English"
+                  id="currentFlag"
+                />
+                <span id="currentLang">Turkish</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+
+              <div class="language-dropdown" id="languageDropdown">
+                <a href="../index.html">
+                  <div class="language-option" data-lang="en" data-flag="gb">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+                    <span>English</span>
+                  </div></a
+                >
+
+                <div class="language-option" data-lang="tr" data-flag="tr">
+                  <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" />
+                  <span>Turkish</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+</div>
 <main>
   <p class="breadcrumb"><a href="../index.html">Ana Sayfa</a> › <a href="index.html">Blog</a> › Yatırımcı Tazmin Merkezi (YTM) Nedir?</p>
   <article class="post">
@@ -141,11 +205,41 @@
   <div class="related"><strong>İlgili:</strong> <a href="../hizmetlerimiz.html">Hizmetlerimiz</a> · <a href="../yatirimci-bilgilendirme.html">Yatırımcı Bilgilendirme</a> · <a href="index.html">Tüm Blog Yazıları</a></div>
   </article>
 </main>
-<footer class="site">
-  <div class="inner">
-    <p>© 2026 Cepte Portföy Yönetimi A.Ş. — Bu site Cepte Portföy'e aittir ve tanıtım amaçlıdır; yatırım tavsiyesi değildir.</p>
-    <p><a href="../hakkimizda.html">Hakkımızda</a> · <a href="../hizmetlerimiz.html">Hizmetlerimiz</a> · <a href="index.html">Blog</a> · <a href="../iletisim.html">İletişim</a> · <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a></p>
-  </div>
-</footer>
+<footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="../assets/img/footer-logo1.png" alt="Cep Portfoy" />
+            </div>
+            <nav class="footer-nav">
+              <a href="../tr/">Ana Sayfa</a>
+              <a href="../tr/pages/about.html">Hakkımızda</a>
+              <a href="../tr/pages/contact-us.html">İletişim</a>
+            </nav>
+            <div class="footer-legal">
+              <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+              <a href="../tr/pages/terms.html">Şartlar ve Koşullar</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-copyright">© Cep Portfoy</div>
+            <div class="footer-payment">
+              <a href="https://x.com/cepportfoy"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/cepportfoy/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://wa.me/905368910655" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="../assets/js/script.js"></script>
 </body>
 </html>

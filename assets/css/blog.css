@@ -1,0 +1,129 @@
+/* Blog pages — adapts articles to the Cep Portfoy site design */
+
+.blog-top {
+    padding-bottom: 40px;
+}
+
+.blog-top header {
+    position: relative;
+}
+
+main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    color: #333;
+    line-height: 1.75;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 24px;
+}
+
+.breadcrumb a {
+    color: #0f9d76;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+article.post h1 {
+    font-size: 36px;
+    line-height: 1.25;
+    color: #001a0f;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 28px;
+}
+
+article.post .lead {
+    font-size: 19px;
+    color: #444;
+    margin-bottom: 28px;
+}
+
+article.post h2 {
+    font-size: 26px;
+    color: #001a0f;
+    margin: 36px 0 14px;
+}
+
+article.post h3 {
+    font-size: 20px;
+    color: #001a0f;
+    margin: 28px 0 10px;
+}
+
+article.post p {
+    margin-bottom: 16px;
+}
+
+article.post ul,
+article.post ol {
+    margin: 0 0 16px 24px;
+}
+
+article.post li {
+    margin-bottom: 8px;
+}
+
+article.post a {
+    color: #0f9d76;
+}
+
+article.post table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+article.post th,
+article.post td {
+    border: 1px solid #e0e0e0;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+article.post th {
+    background: #d8f6ed;
+    color: #001a0f;
+}
+
+article.post blockquote {
+    border-left: 4px solid #0f9d76;
+    background: #f4fbf8;
+    padding: 14px 18px;
+    margin: 20px 0;
+    color: #444;
+}
+
+/* Related links / boxes some articles use */
+.related,
+.post .box,
+.post aside {
+    background: #f4fbf8;
+    border: 1px solid #d8f6ed;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 24px 0;
+}
+
+@media (max-width: 600px) {
+    article.post h1 {
+        font-size: 28px;
+    }
+
+    article.post h2 {
+        font-size: 22px;
+    }
+}
