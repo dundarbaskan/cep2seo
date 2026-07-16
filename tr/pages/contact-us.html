@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim - Cep Portfoy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../assets/img/icon.png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/img/logo1.png" alt="Cep Portfoy" />
+            </a>
+          </div>
+
+          <button class="hamburger" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="header-right">
+          <nav class="nav-wrapper">
+            <div class="mobile-header">
+              <button class="close-menu" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <ul class="nav-menu">
+              <li><a href="../index.html">Ana Sayfa</a></li>
+              <li><a href="./about.html">Hakkımızda</a></li>
+              <li class="has-submenu">
+                <a href="#">Şirket Profili</a>
+                <ul class="sub-menu">
+                  <li><a href="./terms.html">Şartlar ve Koşullar</a></li>
+                  <li><a href="./privacy.html">Gizlilik Politikası</a></li>
+                </ul>
+              </li>
+              <li class="current"><a href="./contact-us.html">İletişim</a></li>
+            </ul>
+
+            <a
+              href="https://appzone.ceportfoy.net/#/auth/register"
+              class="cta-button"
+              >Başlayın</a
+            >
+          </nav>
+
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="language-button" id="languageBtn">
+              <img
+                src="https://flagcdn.com/w40/tr.png"
+                alt="Türkçe"
+                id="currentFlag"
+              />
+              <span id="currentLang">Türkçe</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+
+            <div class="language-dropdown" id="languageDropdown">
+              <a href="./../../index.html">
+                <div class="language-option" data-lang="en" data-flag="gb">
+                  <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+                  <span>English</span>
+                </div></a
+              >
+
+              <div class="language-option" data-lang="tr" data-flag="tr">
+                <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" />
+                <span>Turkish</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1><span class="gradient-text">Bize</span> Ulaşın</h1>
+        <p style="font-size: 20px">
+          Bize her zaman ulaşabilirsiniz — destek, rehberlik veya ticaretle
+          ilgili bilgiler ihtiyacınız olsun, uzman ekibimiz size yardımcı olmaya
+          hazırdır.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2 class="section-title">
+              <span class="gradient-text">Bize</span> Daha Yakın Olun
+            </h2>
+            <p>
+              Ekibimizle kolayca iletişim kurun ve hesap kurulumu ile piyasa
+              analizlerinden tüm ticaret ihtiyaçlarınıza kadar hızlı destek
+              alın.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Konum</h4>
+                  <p>
+                    Levent 199 Plaza, Büyükdere Caddesi No:199, 34394 Şişli /
+                    Istanbul
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="far fa-clock"></i>
+                <div>
+                  <h4>Çalışma Saatleri</h4>
+                  <p>9AM - 8PM</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h4>İletişim</h4>
+                  <p>+90 312 905 59 35</p>
+                  <p>0216 922 0136 (sabit hat)</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="far fa-envelope"></i>
+                <div>
+                  <h4>E-posta</h4>
+                  <p>info@ceportfoy.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="social-section">
+              <h3>Sosyal Medya :</h3>
+              <div class="social-icons">
+                <!-- <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> -->
+                <a href="https://x.com/cepportfoy" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/cepportfoy/"
+                  aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="YouTube"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://wa.me/905368910655" target="_blank"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Images Section -->
+          <div class="images-section">
+            <img src="../assets/img/cep1.jpg" alt="Cep Portfoy 1" loading="lazy" decoding="async">
+            <img src="../assets/img/cep2.jpg" alt="Cep Portfoy 2" loading="lazy" decoding="async">
+            <img src="../assets/img/cep3.jpg" alt="Cep Portfoy 3" loading="lazy" decoding="async">
+            <img src="../assets/img/cep4.jpg" alt="Cep Portfoy 4" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <div id="formMessage" class="form-message"></div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">İsim <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Adınız"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email"
+                  >E-posta<span class="required">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-posta Adresiniz"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="subject"
+                  >Konu<span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Konu"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone"
+                  >Telefon <span class="required">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Telefon Numaranız"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mesaj</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Mesaj"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Mesaj Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2418.0666030054253!2d-2.454230922943689!3d52.69489122326597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a803416263055%3A0x8edd190699529df3!2sInternational%20House%2C%206%20Market%20St%2C%20St%20George&#39;s%2C%20Telford%20TF2%206EF%2C%20UK!5e0!3m2!1sen!2sng!4v1762854222324!5m2!1sen!2sng"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <!-- <iframe src="https://maps.google.com/maps?q=jl.%20sesetan&t=m&z=13&output=embed&iwloc=near" title="Location" aria-label="Location"></iframe> -->
+    </section>
+
+    <section class="newsletter-cta">
+      <div class="container newsletter-cta-grid">
+        <!-- Left Side: Newsletter + Message -->
+        <div class="newsletter-cta-content">
+          <h2 class="section-title">
+            Güncel Kalın ve
+            <span class="gradient-text">Her Zaman Ticaret Yapın</span>
+          </h2>
+          <p style="max-width: 500px">
+            Piyasa analizlerini, ticaret ipuçlarını ve güncellemeleri doğrudan
+            e-posta kutunuza almak için bültenimize abone olun. Ayrıca, mobil
+            uygulamamızı indirerek her yerden ve her zaman güvenli bir şekilde
+            ticaret yapabilirsiniz.
+          </p>
+
+          <!-- Newsletter Form -->
+          <a href="#" class="btn btn-white">İletişim</a>
+
+          <!-- Store Buttons -->
+          <div class="store-buttons">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.ceportfoy.app"
+              ><img src="../assets/img/gplay.png" alt="Google Play"
+            /></a>
+            <a href="#"
+              ><img src="../assets/img/appstore.png" alt="App Store"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Right Side: App Preview Image -->
+        <div class="newsletter-cta-image">
+          <img src="../assets/img/iphone.png" alt="Trading App Preview" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="../assets/img/footer-logo1.png" alt="Cep Portfoy" />
+            </div>
+            <nav class="footer-nav">
+              <a href="../index.html">Ana Sayfa</a>
+              <a href="./about.html">Hakkımızda</a>
+              <a href="./contact-us.html">İletişim</a>
+            </nav>
+            <div class="footer-legal">
+              <a href="./privacy.html">Gizlilik Politikası</a>
+              <a href="./terms.html">Şartlar ve Koşullar</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-copyright">© Cep Portfoy</div>
+            <div class="footer-payment">
+              <a href="https://x.com/cepportfoy"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/cepportfoy/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://wa.me/905368910655" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/69662fc1d7f0511983c598f7/1jeril3gg";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

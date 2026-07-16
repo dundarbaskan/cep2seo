@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cep Portfoy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/png" href="./assets/img/icon.png" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="top-section">
+      <header>
+        <div class="header-container">
+          <div class="header-left">
+            <div class="logo">
+              <a href="./">
+                <img src="./assets/img/logo1.png" alt="Cep Portfoy" />
+              </a>
+            </div>
+
+            <button class="hamburger" aria-label="Toggle menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="header-right">
+            <nav class="nav-wrapper">
+              <div class="mobile-header">
+                <button class="close-menu" aria-label="Close menu">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <ul class="nav-menu">
+                <li class="current"><a href="./">Ana Sayfa</a></li>
+                <li><a href="pages/about.html">Hakkımızda</a></li>
+                <li class="has-submenu">
+                  <a href="#">Şirket Profili</a>
+                  <ul class="sub-menu">
+                    <li><a href="pages/terms.html">Şartlar ve Koşullar</a></li>
+                    <li>
+                      <a href="pages/privacy.html">Gizlilik Politikası</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="pages/contact-us.html">İletişim</a></li>
+              </ul>
+
+              <a
+                href="https://appzone.ceportfoy.net/#/auth/register"
+                class="cta-button"
+                >Başlayın</a
+              >
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-button" id="languageBtn">
+                <img
+                  src="https://flagcdn.com/w40/tr.png"
+                  alt="English"
+                  id="currentFlag"
+                />
+                <span id="currentLang">Turkish</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+
+              <div class="language-dropdown" id="languageDropdown">
+                <a href="../index.html">
+                  <div class="language-option" data-lang="en" data-flag="gb">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+                    <span>English</span>
+                  </div></a
+                >
+
+                <div class="language-option" data-lang="tr" data-flag="tr">
+                  <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" />
+                  <span>Turkish</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- <div class="mobile-overlay"></div> -->
+      <!-- Hero Section -->
+      <section class="hero" id="home" style="padding-top: 180px">
+        <div class="container">
+          <div class="hero-content">
+            <div>
+              <h1>
+                Yeni Nesil için Yapay Zeka Destekli
+                <span class="highlight">Yatırım Platformu</span>
+              </h1>
+              <p>
+                Kurumsal yatırımcılara özel olan araçları şimdi tüm
+                yatırımcıların hizmetine sunuyoruz. SingFinTech’in Cep Portfoy
+                platformu; yapay zeka, veri analizi ve davranışsal ekonomi
+                alanlarını birleştirerek küresel yatırım anlayışını hassasiyet
+                ve erişilebilirlikle yeniden şekillendiriyor.
+              </p>
+              <div class="hero-buttons">
+                <a
+                  href="https://appzone.ceportfoy.net/#/auth/register"
+                  class="btn btn-primary"
+                >
+                  <i class="far fa-credit-card"></i>
+                  Başlayın
+                </a>
+                <a
+                  href="https://appzone.ceportfoy.net/#/auth/login"
+                  class="btn btn-secondary"
+                >
+                  Giriş Yap
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="hero-stats">
+                <div class="user-images">
+                  <img src="./assets/img/hero/user1.jpg" alt="User" />
+                  <img src="./assets/img/hero/user2.jpg" alt="User" />
+                  <img src="./assets/img/hero/user3.jpg" alt="User" />
+                </div>
+                <div>
+                  <h3>Dünya Çapında 2B+ Yatırımcı Tarafından Güveniliyor</h3>
+                  <div style="color: #ffd700">★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="./assets/img/hero/phone.png" alt="Credit Card" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Partners Section -->
+
+    <section class="partners">
+      <div class="container">
+        <!-- Swiper -->
+        <div class="swiper partners-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/1.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/2.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/3.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/4.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/5.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/6.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/7.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/8.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/9.jpeg" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/10.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/11.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/12.png" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/13.jpeg" alt="Partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/logos/14.png" alt="Partner" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="partners">
+        <div class="container">
+            <div class="partners-grid">
+                <img src="./assets/img/logo1.png" alt="Partner">
+                <img src="./assets/img/logo1.png" alt="Partner">
+                <img src="./assets/img/logo1.png" alt="Partner">
+                <img src="./assets/img/logo1.png" alt="Partner">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features-content">
+          <div class="card-section">
+            <h2 class="section-title">
+              Cep Portfoy’ün Sizin İçin En İyi Seçim
+              <span class="gradient-text">Olmasının Nedeni</span>
+            </h2>
+            <p>
+              Özel C.A.I.R. motorumuz (Cepte Adaptive Investment Reactor)
+              tarafından desteklenen kurumsal düzeyde yatırım araçlarını
+              deneyimleyin. Gerçek zamanlı analizler, tahmine dayalı modelleme
+              ve uyarlanabilir stratejiler parmaklarınızın ucunda.
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card1">
+              <i class="fas fa-brain"></i>
+              <h3>Yapay Zeka Destekli Analitik</h3>
+              <p>
+                C.A.I.R. motorumuz, piyasaları sürekli izlemek ve portföyünüzü
+                gerçek zamanlı olarak optimize etmek için makine öğrenimini
+                kullanır.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-shield-alt"></i>
+              <h3>AES-256 Güvenliği</h3>
+              <p>
+                ISO/IEC 27001 uyumlu banka düzeyinde şifreleme. Verileriniz
+                Singapur, Londra ve Frankfurt sunucularımızda güvence altında.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-chart-line"></i>
+              <h3>Tahmine Dayalı Risk Modellemesi</h3>
+              <p>
+                Gelişmiş algoritmalar, riskleri değerlendirir ve gerçek zamanlı
+                piyasa koşulları ile duygu analizlerine dayalı olarak
+                stratejileri uyarlayabilir.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-globe"></i>
+              <h3>Çok Varlıklı Ticaret</h3>
+              <p>
+                Otomatik strateji optimizasyonu ile tek bir birleşik platform
+                üzerinden hisse senetleri, döviz, kripto ve emtialara erişim
+                sağlayın.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="credit-card-section">
+      <div class="container">
+        <div class="credit-card-content">
+          <div class="card-mockup">
+            <div class="green-card-bg"></div>
+            <img src="./assets/img/precious.png" alt="Trading Platform" />
+          </div>
+          <div>
+            <h2 class="section-title">
+              C.A.I.R. Teknolojisi ile
+              <span class="gradient-text">Desteklenmektedir</span>
+            </h2>
+            <p>
+              Özel Cepte Adaptive Investment Reactor’ımız, büyük veri, makine
+              öğrenimi ve davranışsal ekonomiyi birleştirerek hassas ticaret
+              zekası sunar.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-card1 feature-card1">
+                <i class="fa-solid fa-microchip"></i>
+                <div>
+                  <div class="number">Gerçek Zamanlı İşleme</div>
+                  <div class="label">
+                    Milisaniye tepki süreleriyle sürekli piyasa izleme
+                  </div>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-robot"></i>
+                <div>
+                  <div class="number">NLP Duygu Analizi</div>
+                  <div class="label">
+                    Doğal dil işleme, haberleri ve sosyal verileri analiz eder.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <i class="fas fa-sync-alt"></i>
+                <div>
+                  <div class="number">Uyarlanabilir Öğrenme</div>
+                  <div class="label">
+                    Algoritmalar, sürekli makine öğrenimi ile gelişir.
+                  </div>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                  <div class="number">Çoklu Bulut Mimarisi</div>
+                  <div class="label">
+                    Dağıtılmış sunucular, dayanıklılık ve mevzuata uyumu garanti
+                    eder.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="payment-section" style="overflow: hidden">
+      <div class="payment-container">
+        <div class="payment-left">
+          <h2 class="section-title">
+            Dünya Çapında Yatırımcılar Tarafından
+            <span style="color: #fff">Güveniliyor</span>
+          </h2>
+          <p>
+            Merkezi Singapur’da bulunan ve Asya, Avrupa ile Orta Doğu’da
+            faaliyet gösteren SingFinTech Pte. Ltd., şeffaflık, güvenlik ve
+            ileri teknoloji ile finansal yenilik sunar.
+          </p>
+          <div class="progress-section">
+            <div class="left">
+              <div class="progress-bar">
+                <div class="progress-label">
+                  <span>ISO/IEC 27001 Uyumluluğu</span>
+                  <span>100%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-label">
+                  <span>Müşteri Memnuniyeti Oranı</span>
+                  <span>96%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 96%"></div>
+                </div>
+              </div>
+
+              <ul class="checklist">
+                <li>
+                  <i class="fas fa-check"></i> PDPA, GDPR ve KVKK’ya Uyumlu
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Gelirin %30’u Ar-Ge’ye Ayrılıyor
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Çoklu Yargı Yetkisi Operasyonları
+                </li>
+              </ul>
+
+              <a
+                href="https://appzone.ceportfoy.net/#/auth/register"
+                class="btn btn-secondary"
+                style="margin-top: 30px; color: #fff !important"
+                >Daha Fazla Bilgi</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-right">
+          <img src="./assets/img/right.jpg" alt="Global Operations" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+      <div class="container">
+        <div class="mission-content">
+          <div class="mission-text">
+            <h2><span class="gradient-text">SingFinTech’in</span> Misyonu</h2>
+            <p style="color: #000">
+              SingFinTech, finans ve yapay zekânın kesişim noktasında yer alır —
+              yalnızca yatırımların değil, güvenin geleceğini de kodlar. Cep
+              Portfoy aracılığıyla, her yatırımcının finansal geleceğini makine
+              zekâsının hassasiyeti ve insan etiklerinin güvenilirliği ile
+              kontrol altına almasını sağlıyoruz.
+            </p>
+
+            <div class="mission-features">
+              <div class="feature-item">
+                <i class="fas fa-brain"></i>
+                <div class="feature-item-content">
+                  <h4>Yapay Zeka Öncelikli Yaklaşım</h4>
+                  <p>
+                    Gerçek zamanlı piyasa zekası için son teknoloji makine
+                    öğreniminden yararlanmak
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-handshake"></i>
+                <div class="feature-item-content">
+                  <h4>Güven ve Etik</h4>
+                  <p>
+                    Teknolojiyi şeffaflık ve insan değerlerini merkeze alarak
+                    inşa etmek
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <div class="feature-item-content">
+                  <h4>Herkese Açık Erişim</h4>
+                  <p>
+                    Kurumsal düzeydeki araçları her yatırımcının kullanımına
+                    sunmak
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <div class="feature-item-content">
+                  <h4>Hassas Ticaret</h4>
+                  <p>
+                    Algoritmik doğruluğu stratejik insan öngüsü ile birleştirmek
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-visual">
+            <div class="visual-grid">
+              <div class="visual-card">
+                <i class="fas fa-code"></i>
+                <h3>100%</h3>
+                <p>Yapay Zeka Destekli Analitik</p>
+              </div>
+
+              <div class="visual-card">
+                <i class="fas fa-globe-asia"></i>
+                <h3>3+</h3>
+                <p>Küresel Bölgeler</p>
+              </div>
+
+              <div class="visual-card">
+                <i class="fas fa-server"></i>
+                <h3>24/7</h3>
+                <p>Piyasa İzleme</p>
+              </div>
+
+              <div class="visual-card">
+                <i class="fas fa-lock"></i>
+                <h3>ISO</h3>
+                <p>27001 Sertifikalı</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-badge">
+            <strong>30%</strong>
+            <span>Ar-Ge’ye Ayrılan Gelir</span>
+          </div>
+          <div class="stat-badge">
+            <strong>2K+</strong>
+            <span>Aktif Yatırımcılar</span>
+          </div>
+          <div class="stat-badge">
+            <strong>96%</strong>
+            <span>Memnuniyet Oranı</span>
+          </div>
+          <div class="stat-badge">
+            <strong>Çoklu Yargı Yetkisi</strong>
+            <span>Operasyonlar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title">
+          Yatırım <span class="gradient-text">Planınızı Seçin</span>
+        </h2>
+        <p style="font-size: 20px">
+          Başlangıç seviyesinden kurumsal yatırımcılara kadar — hedeflerinize
+          göre özelleştirilmiş akıllı portföyler.
+        </p>
+
+        <div>
+          <!-- <img src="assets/img/options.jpg" /> -->
+          <img
+            src="./assets/img/cep.jpg"
+            alt="Responsive Image"
+            style="
+              width: 100%;
+              max-width: 1200px;
+              height: auto;
+              display: block;
+              margin: 0 auto;
+            "
+            onload="
+              this.style.width = window.innerWidth <= 768 ? '90%' : '100%'
+            "
+          />
+        </div>
+        <!-- <div class="pricing-grid">
+                <div class="pricing-card">
+                    <img src="https://templatekit.jegtheme.com/credigi/wp-content/uploads/sites/247/2022/03/Design-green-1024x646.jpg" alt="Standard Plan">
+                    <h3>Standart</h3>
+                    <p>$1,000</p>
+                    <ul class="pricing-features">
+                        <li>Başla. Spread.:<span class="color-text">0.8</span></li>
+                        <li>Kaldıraç: <span class="color-text">1:400</span></li>
+                        <li>Min. Lot: <span class="color-text">0.01</span></li>
+                        <li>Komisyon: <span class="color-text">0</span></li>
+                        <li>Yapay Zeka Destekli Portföy Analitiği</li>
+                        <li>Ücretsiz Eğitim Kaynakları</li>
+                    </ul>
+                    <a href="https://client.ceportfoy.com/#/auth/register?lang=tr" class="btn btn-primary">Başlayın</a>
+                </div>
+
+                <div class="pricing-card">
+                    <img src="https://templatekit.jegtheme.com/credigi/wp-content/uploads/sites/247/2022/03/Design-1-1024x646.jpg" alt="Gold Plan">
+                    <h3>Altın</h3>
+                    <p>$3,000</p>
+                    <ul class="pricing-features">
+                        <li>Başla. Spread.:<span class="color-text">0.6</span></li>
+                        <li>Kaldıraç: <span class="color-text">1:400</span></li>
+                        <li>Min. Lot: <span class="color-text">0.01</span></li>
+                        <li>Komisyon: <span class="color-text">0</span></li>
+                        <li>Gelişmiş Yapay Zeka Analizleri</li>
+                        <li>Öncelikli Destek</li>
+                    </ul>
+                    <a href="https://client.ceportfoy.com/#/auth/register?lang=tr" class="btn" style="background: #fff; color: #667eea;">Başlayın</a>
+                </div>
+
+                <div class="pricing-card">
+                    <img src="https://templatekit.jegtheme.com/credigi/wp-content/uploads/sites/247/2022/03/Design-3-1024x646.jpg" alt="VIP Plan">
+                    <h3>VIP</h3>
+                    <p>$10,000</p>
+                    <ul class="pricing-features">
+                        <li>Başla. Spread.:<span class="color-text">0.3</span></li>
+                        <li>Kaldıraç: <span class="color-text">1:400</span></li>
+                        <li>Min. Lot: <span class="color-text">0.01</span></li>
+                        <li>Komisyon: <span class="color-text">0</span></li>
+                        <li>Tam C.A.I.R. Erişimi</li>
+                        <li>Özel Hesap Yöneticisi</li>
+                    </ul>
+                    <a href="https://client.ceportfoy.com/#/auth/register?lang=tr" class="btn btn-primary">Başlayın</a>
+                </div>
+            </div> -->
+
+        <div
+          style="
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+          "
+        >
+          <p style="font-size: 18px; margin: 0">
+            Kurumsal Çözümlere mi İhtiyacınız Var?
+          </p>
+          <a
+            href="./pages/contact-us.html"
+            style="
+              font-size: 18px;
+              text-decoration: none;
+              color: #009688;
+              font-weight: 800;
+            "
+          >
+            İletişim
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+      <div class="container">
+        <h2 class="section-title">
+          3 Basit <span class="gradient-text">Adımda Başlayın</span>
+        </h2>
+        <p style="font-size: 20px">
+          Kayıttan doğrulanmış ticaret erişimine kadar dakikalar içinde yapay
+          zeka destekli yatırım yolculuğunuza başlayın.
+        </p>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">01.</div>
+            <div class="process-card1 feature-card1">
+              <i class="fas fa-user-plus"></i>
+              <h3>Hızlı Kayıt</h3>
+              <p>
+                Temel bilgilerinizi sağlayarak dakikalar içinde hesabınızı
+                oluşturun. Sistemimiz, PDPA, GDPR ve KVKK standartlarına uygun
+                güvenli doğrulama protokolleri kullanır.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">02.</div>
+            <div class="process-card">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Güvenli Doğrulama</h3>
+              <p>
+                Şifrelenmiş platformumuz üzerinden kimlik doğrulamanızı
+                tamamlayın. Verileriniz AES-256 şifrelemesi ve ISO/IEC 27001
+                uyumluluğu ile korunur.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">03.</div>
+            <div class="process-card">
+              <i class="fas fa-rocket"></i>
+              <h3>Ticarete Başla</h3>
+              <p>
+                C.A.I.R. teknolojisinin tüm gücüne erişin. Yapay zekâ destekli
+                öngörüler, gerçek zamanlı analizler ve otomatik portföy
+                optimizasyonu ile ticarete başlayın.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-content">
+          <div class="testimonials-text">
+            <h2 class="section-title">Yatırımcılarımız Ne Diyor</h2>
+          </div>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial-card swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  Yapay zekâ analizleri inanılmaz. Cep Portfoy’ün C.A.I.R.
+                  motoru, kaçıracağım fırsatları fark etmeme yardımcı oldu.
+                  Platform, kurumsal düzeydeki araçları kullanıcı dostu
+                  tasarımla birleştiriyor..
+                </p>
+                <div class="testimonial-author">
+                  <img src="./assets/img/img1.jpg" alt="Investor" />
+                  <div class="author-info">
+                    <h4>Kian Robinson</h4>
+                    <p>Profesyonel Yatırımcı</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  Sonunda gerçek yapay zekâ kullanan bir yatırım platformu.
+                  Tahmine dayalı modelleme ve risk değerlendirme araçları,
+                  portföyümü yönetme şeklimi tamamen değiştirdi.
+                </p>
+                <div class="testimonial-author">
+                  <img src="./assets/img/img1.jpg" alt="Investor" />
+                  <div class="author-info">
+                    <h4>Marco Bannister</h4>
+                    <p>Kripto Yatırımcısı</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  Güvenlik ve şeffaflık benim için en önemli öncelikler.
+                  SingFinTech’in uluslararası standartlara uyumu ve şifrelenmiş
+                  altyapısı bana tam bir huzur sağlıyor.
+                </p>
+                <div class="testimonial-author">
+                  <img src="./assets/img/img2.jpg" alt="Investor" />
+                  <div class="author-info">
+                    <h4>Amrita Stevens</h4>
+                    <p>Kurumsal Yatırımcı</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="responsive-section">
+      <!-- Left Side -->
+      <div class="left-side">
+        <p>Daha detaylı bilgi için lütfen PDF'e bakınız.</p>
+        <a href="../tr/Para_Çekim_Beyanı.pdf" target="_blank" class="pdf-btn">
+          PDF'yi görüntüle
+        </a>
+      </div>
+
+      <!-- Right Side -->
+      <div class="right-side">
+        <img src="./assets/img/rightimg.jpg" alt="Responsive Image" />
+      </div>
+    </section>
+
+    <style>
+      .responsive-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+        gap: 20px;
+      }
+
+      /* Left */
+      .left-side {
+        flex: 1;
+        min-width: 280px;
+        max-width: 500px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .left-side p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .pdf-btn {
+        background: linear-gradient(135deg, #7bd3bc 0%, #007b6b 100%);
+        color: #fff;
+        padding: 18px 30px;
+        font-size: 17px;
+        border-radius: 8px;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+      }
+
+      /* Right */
+      .right-side img {
+        width: 95%;
+        max-width: 1100px;
+        height: auto;
+      }
+
+      /* --- MOBILE (VERTICAL STACK) --- */
+      @media (max-width: 768px) {
+        .responsive-section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .right-side img {
+          max-width: 95%;
+        }
+      }
+    </style>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Sıkça Sorulan <span class="gradient-text">Sorular</span></h1>
+        <p style="font-size: 20px">
+          Cep Portfoy ile yapay zekâ destekli yatırım hakkında bilmeniz gereken
+          her şey
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-content">
+          <div class="faq-text">
+            <h2 class="section-title">
+              Sorularınıza <span class="gradient-text">Yanıtlar</span>
+            </h2>
+            <p>
+              Teknolojimiz, güvenlik önlemlerimiz ve akıllı yatırım yapmaya
+              nasıl başlayacağınız hakkında bilgi edinin.
+            </p>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="accordion-title">C.A.I.R. motoru nedir?</span>
+                  <div class="accordion-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-body">
+                    Cepte Adaptive Investment Reactor (C.A.I.R.), gerçek zamanlı
+                    analiz, tahmine dayalı modelleme ve doğal dil işlemeyi
+                    birleştirerek portföyünüzü otomatik olarak optimize eden
+                    özel yapay zekâ motorumuzdur.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="accordion-title"
+                    >Verilerim ne kadar güvenli?</span
+                  >
+                  <div class="accordion-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-body">
+                    AES-256 şifreleme, ISO/IEC 27001 uyumluluğu ve Singapur,
+                    Londra ve Frankfurt’taki dağıtılmış sunucular kullanıyoruz.
+                    Tüm veriler PDPA, GDPR ve KVKK yönetmeliklerine göre
+                    korunmaktadır.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="accordion-title"
+                    >Hangi varlıkları alıp satabilirim?</span
+                  >
+                  <div class="accordion-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-body">
+                    Cep Portfoy, hisse senetleri, döviz, kripto para ve emtialar
+                    dahil çok varlıklı ticareti destekler — tümü AI destekli
+                    strateji optimizasyonu ile tek bir birleşik platform
+                    üzerinden sunulur.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item active">
+                <div class="accordion-header">
+                  <span class="accordion-title"
+                    >Cep Portfoy düzenleniyor mu?</span
+                  >
+                  <div class="accordion-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-body">
+                    Evet. SingFinTech, Singapur, Türkiye ve Birleşik Krallık’ta
+                    tam düzenleyici uyum ile faaliyet göstermektedir ve Marina
+                    Bay, İstanbul ve Canary Wharf’ta ofislere sahiptir.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-image">
+            <img src="./assets/img/faq.jpg" alt="FAQ" />
+            <div class="support-card">
+              <h3>7/24 Uzman Desteği</h3>
+              <div class="support-phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>+90 312 905 59 35</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <i class="far fa-envelope"></i>
+            <div>
+              <h4>E-posta Desteği</h4>
+              <p>info@ceportfoy.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Türkiye Ofisi</h4>
+              <p>+90 312 905 59 35</p>
+              <p>0216 922 0136 (sabit hat)</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i class="fas fa-building"></i>
+            <div>
+              <h4>Ana Şirket</h4>
+              <p>SingFinTech Pte. Ltd.</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Türkiye Ofisi</h4>
+              <p>
+                Levent 199 Plaza, Büyükdere Caddesi No:199, 34394 Şişli /
+                Istanbul
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-cta">
+      <div class="container newsletter-cta-grid">
+        <div class="newsletter-cta-content">
+          <h2 class="section-title">
+            Akıllı Yatırımın
+            <span class="gradient-text">Geleceğine Katılın</span>
+          </h2>
+          <p style="max-width: 500px">
+            Yapay zekâ destekli piyasa analizlerini, ticaret stratejilerini ve
+            platform güncellemelerini e-posta kutunuza alın. Her yerden ve her
+            zaman güvenli tic
+          </p>
+
+          <a href="./pages/contact-us.html" class="btn btn-white">İletişim</a>
+
+          <div class="store-buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.ceportfoy.app"
+              ><img src="./assets/img/gplay.png" alt="Google Play"
+            /></a>
+            <a href="#"
+              ><img src="./assets/img/appstore.png" alt="App Store"
+            /></a>
+          </div>
+        </div>
+
+        <div class="newsletter-cta-image">
+          <img src="./assets/img/iphone.png" alt="Trading App" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="./assets/img/footer-logo1.png" alt="Cep Portfoy" />
+            </div>
+            <nav class="footer-nav">
+              <a href="./">Ana Sayfa</a>
+              <a href="./pages/about.html">Hakkımızda</a>
+              <a href="./pages/contact-us.html">İletişim</a>
+            </nav>
+            <div class="footer-legal">
+              <a href="./pages/privacy.html">Gizlilik Politikası</a>
+              <a href="./pages/terms.html">Şartlar ve Koşullar</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-copyright">© Cep Portfoy</div>
+            <div class="footer-payment">
+              <a href="https://x.com/cepportfoy"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/cepportfoy/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://wa.me/905368910655" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Welcome Popup -->
+    <div id="welcomePopup" class="popup-overlay">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h2>Değerli Yatırımcılarımız,</h2>
+          <button id="closePopup" class="close-popup-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="popup-body">
+          <p>
+            Şirketimiz tarafından yapılan bilgilendirmeler ve duyurular yalnızca
+            resmî iletişim kanallarımız üzerinden gerçekleştirilmektedir. Bu
+            nedenle, resmî olmayan kaynaklardan iletilen mesajlara temkinli
+            yaklaşmanızı öneririz.
+          </p>
+          <p>
+            Herhangi bir tereddüt halinde,
+            <a href="tel:+903129055935">+90 312 905 59 35</a> numaralı telefondan
+            veya <a href="mailto:info@cepportfoy.com">info@cepportfoy.com</a>.
+            adresinden bizimle iletişime geçebilirsiniz.
+          </p>
+          <p>Bilginize sunarız.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/69662fc1d7f0511983c598f7/1jeril3gg";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
