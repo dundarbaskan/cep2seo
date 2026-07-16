@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margin Call (Teminat Tamamlama Çağrısı) Nedir? | Cepte Portföy</title>
+<meta name="description" content="Margin call nedir, ne zaman gelir ve teminat tamamlama çağrısı alındığında ne yapılmalı? Teminat seviyesi ve stop-out mantığını açıklayan tarafsız rehber.">
+<meta name="keywords" content="margin call nedir, teminat tamamlama çağrısı, stop out, teminat seviyesi, forex teminat">
+<meta name="author" content="Cepte Portföy Yönetimi A.Ş.">
+<link rel="canonical" href="https://www.cepteportfoy.org/blog/margin-call-nedir.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Margin Call (Teminat Tamamlama Çağrısı) Nedir? | Cepte Portföy">
+<meta property="og:description" content="Margin call nedir, ne zaman gelir ve teminat tamamlama çağrısı alındığında ne yapılmalı? Teminat seviyesi ve stop-out mantığını açıklayan tarafsız rehber.">
+<meta property="og:url" content="https://www.cepteportfoy.org/blog/margin-call-nedir.html">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Cepte Portföy">
+<meta property="og:image" content="https://www.cepteportfoy.org/assets/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0f5132">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../assets/site.webmanifest">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Margin Call (Teminat Tamamlama Çağrısı) Nedir?",
+  "description": "Margin call nedir, ne zaman gelir ve teminat tamamlama çağrısı alındığında ne yapılmalı? Teminat seviyesi ve stop-out mantığını açıklayan tarafsız rehber.",
+  "inLanguage": "tr",
+  "datePublished": "2026-07-14",
+  "dateModified": "2026-07-14",
+  "image": "https://www.cepteportfoy.org/assets/favicon.svg",
+  "author": {"@type": "Organization", "name": "Cepte Portföy Yönetimi A.Ş."},
+  "publisher": {"@type": "Organization", "name": "Cepte Portföy Yönetimi A.Ş.", "logo": {"@type": "ImageObject", "url": "https://www.cepteportfoy.org/assets/favicon.svg"}},
+  "mainEntityOfPage": "https://www.cepteportfoy.org/blog/margin-call-nedir.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.cepteportfoy.org/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.cepteportfoy.org/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Margin Call (Teminat Tamamlama Çağrısı) Nedir?"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Margin call ile stop-out aynı şey mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Margin call, teminat seviyesinin belirli bir eşiğe düştüğünde gelen uyarıdır. Stop-out ise teminat daha da düştüğünde pozisyonların aracı kurum tarafından otomatik olarak kapatılmasıdır. Margin call genellikle stop-out'tan önce gelen bir erken uyarı niteliği taşır."}},
+    {"@type": "Question", "name": "Margin call aldığımda ne yapmalıyım?", "acceptedAnswer": {"@type": "Answer", "text": "Genel olarak iki seçenek vardır: hesaba ek teminat yatırmak veya mevcut pozisyonların bir kısmını kapatarak teminat seviyesini yükseltmek. Hangi seçeneğin uygun olduğu risk durumunuza bağlıdır ve bu bir yatırım tavsiyesi değildir."}},
+    {"@type": "Question", "name": "Margin call'ı önlemek mümkün mü?", "acceptedAnswer": {"@type": "Answer", "text": "Aşırı kaldıraçtan kaçınmak, pozisyon büyüklüğünü sermayeye göre ölçeklemek ve zarar durdurma emirleri kullanmak margin call olasılığını azaltabilir. Ancak piyasa koşulları her zaman kontrol edilemez ve risk tamamen ortadan kaldırılamaz."}},
+    {"@type": "Question", "name": "Teminat seviyesi nasıl hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "Teminat seviyesi genellikle özkaynağın (equity) kullanılan teminata (used margin) oranının yüzde olarak ifadesidir. Örneğin özkaynak kullanılan teminatın iki katıysa teminat seviyesi yaklaşık yüzde 200 olur. Bu oran düştükçe margin call ve stop-out eşiklerine yaklaşılır."}},
+    {"@type": "Question", "name": "Margin call gelmeden pozisyonlarım kapanabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Piyasa çok hızlı hareket ettiğinde teminat seviyesi kısa sürede stop-out eşiğinin altına inebilir. Bu durumda uyarı ile stop-out arasındaki süre çok kısalabilir veya pratikte fark edilmeyebilir; bu nedenle margin call'a bel bağlamak yerine önceden risk planı yapmak önemlidir."}}
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="logo" href="../index.html">Cepte <span>Portföy</span></a>
+    <nav class="main">
+      <a href="../index.html">Ana Sayfa</a>
+      <a href="../hakkimizda.html">Hakkımızda</a>
+      <a href="../hizmetlerimiz.html">Hizmetlerimiz</a>
+      <a href="../yatirimci-bilgilendirme.html">Yatırımcı Bilgilendirme</a>
+      <a href="index.html">Blog</a>
+      <a href="../iletisim.html">İletişim</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <p class="breadcrumb"><a href="../index.html">Ana Sayfa</a> › <a href="index.html">Blog</a> › Margin Call (Teminat Tamamlama Çağrısı) Nedir?</p>
+  <article class="post">
+  <h1>Margin Call (Teminat Tamamlama Çağrısı) Nedir?</h1>
+  <p class="post-meta">Yayın: 14 Temmuz 2026 · Kategori: Risk ve Kaldıraç</p>
+  <p class="lead">Margin call, kaldıraçlı işlem yapan yatırımcıların karşılaşabileceği en kritik uyarılardan biridir. Türkçesiyle "teminat tamamlama çağrısı", hesabınızdaki teminatın açık pozisyonları taşımaya yetmeyecek seviyeye düştüğünde devreye girer. Bu yazıda margin call'ın nasıl oluştuğunu, stop-out ile farkını ve böyle bir durumla karşılaşıldığında dikkat edilmesi gereken temel noktaları açıklıyoruz.</p>
+
+  <h2>Margin Call Nasıl Oluşur?</h2>
+  <p>Kaldıraçlı bir pozisyon açtığınızda, aracı kurum teminatınızın bir kısmını bloke eder. Bu bloke edilen tutara "kullanılan teminat" (used margin), serbest kalan kısma ise "kullanılabilir teminat" (free margin) denir. Piyasa aleyhinize hareket ettikçe pozisyonun gerçekleşmemiş zararı artar; bu zarar özkaynağınızdan (equity) düşülür ve hesabınızın kullanılabilir teminatı azalır. Teminat seviyesi (özkaynağın kullanılan teminata oranı) belirli bir eşiğin altına düştüğünde, aracı kurum size bir margin call uyarısı iletir.</p>
+  <p>Bu uyarı, "hesabınızdaki teminat pozisyonlarınızı taşımak için yetersiz hâle geliyor" mesajıdır. Kaldıracın teminat üzerindeki etkisini daha iyi anlamak için <a href="kaldirac-nedir.html">Kaldıraç nedir</a> yazısını incelemenizi öneririz.</p>
+  <p>Temel kavramları netleştirmek faydalı olur:</p>
+  <ul>
+    <li><strong>Özkaynak (Equity):</strong> Hesap bakiyeniz artı açık pozisyonların anlık kâr/zararı.</li>
+    <li><strong>Kullanılan teminat:</strong> Açık pozisyonlar için bloke edilen tutar.</li>
+    <li><strong>Kullanılabilir teminat:</strong> Yeni pozisyon açmak veya mevcut zararı karşılamak için kalan serbest tutar.</li>
+    <li><strong>Teminat seviyesi:</strong> Özkaynağın kullanılan teminata oranı; yüzde olarak ifade edilir ve margin call ile stop-out eşiklerinin ölçüldüğü değerdir.</li>
+  </ul>
+
+  <h2>Teminat Seviyesi ve Eşikler</h2>
+  <p>Aracı kurumlar, margin call ve stop-out için önceden belirlenmiş yüzde eşikleri tanımlar. Bu eşikler kuruma ve hesap tipine göre değişebilir; bu nedenle çalıştığınız kurumun sözleşme ve işlem kurallarını okumak önemlidir. Aşağıdaki tablo, kavramların birbirine göre konumunu temsili olarak özetler:</p>
+  <table>
+    <tr><th>Teminat Seviyesi Durumu</th><th>Anlamı</th><th>Olası Sonuç</th></tr>
+    <tr><td>Yüksek seviye</td><td>Özkaynak, kullanılan teminatın çok üzerinde</td><td>Pozisyonlar rahatça taşınır</td></tr>
+    <tr><td>Uyarı eşiğine yaklaşma</td><td>Zarar arttıkça oran düşer</td><td>Margin call uyarısı gelebilir</td></tr>
+    <tr><td>Kritik eşiğin altı</td><td>Özkaynak teminatı taşımakta zorlanır</td><td>Stop-out ile otomatik kapanış</td></tr>
+  </table>
+  <p>Buradaki değerler kurumdan kuruma farklılık gösterdiği için, tabloyu genel bir mantık şeması olarak değerlendirin; kesin oranlar için kurumunuzun resmi belgelerine başvurun.</p>
+
+  <h2>Margin Call ile Stop-Out Arasındaki Fark</h2>
+  <p>Bu iki kavram sıkça karıştırılır ancak farklı aşamaları temsil eder:</p>
+  <table>
+    <tr><th>Kavram</th><th>Ne Zaman Gerçekleşir</th><th>Sonuç</th></tr>
+    <tr><td>Margin Call</td><td>Teminat seviyesi uyarı eşiğine düştüğünde</td><td>Yatırımcıya erken uyarı verilir</td></tr>
+    <tr><td>Stop-Out</td><td>Teminat seviyesi kritik eşiğin altına düştüğünde</td><td>Pozisyonlar otomatik kapatılır</td></tr>
+  </table>
+  <p>Yani margin call genellikle stop-out'tan önce gelen bir ikaz aşamasıdır. Stop-out seviyesine ulaşıldığında ise aracı kurum, kalan teminatı korumak amacıyla pozisyonları önceden belirlenen kurallara göre otomatik olarak kapatabilir.</p>
+
+  <h2>Margin Call Alındığında Ne Yapılabilir?</h2>
+  <p>Bir teminat tamamlama çağrısı aldığınızda genel olarak iki yol öne çıkar:</p>
+  <ul>
+    <li><strong>Ek teminat yatırmak:</strong> Hesaba yeni teminat ekleyerek teminat seviyesini yükseltmek ve pozisyonu ayakta tutmak.</li>
+    <li><strong>Pozisyon küçültmek:</strong> Açık pozisyonların bir kısmını kapatarak kullanılan teminatı azaltmak ve riski düşürmek.</li>
+  </ul>
+  <p>Hangi yolun uygun olduğu, tamamen yatırımcının risk durumuna, piyasa koşullarına ve stratejisine bağlıdır. Bu içerik yatırım tavsiyesi değildir; her yatırımcı kendi durumunu değerlendirmelidir. Zararı sınırlamaya yönelik araçlar için <a href="stop-loss-kullanimi.html">Stop-loss nedir ve nasıl kullanılır</a> yazısına bakabilirsiniz.</p>
+  <p>Panik anında acele karar vermek çoğu zaman durumu ağırlaştırır. Bir margin call ile karşılaşıldığında şu sırayı izlemek yardımcı olabilir:</p>
+  <ol>
+    <li>Hesabın güncel özkaynak ve teminat seviyesini kontrol edin.</li>
+    <li>Zararın hangi pozisyonlardan kaynaklandığını belirleyin.</li>
+    <li>Ek teminat mı yatıracağınıza yoksa pozisyon mu küçülteceğinize önceden belirlediğiniz plana göre karar verin.</li>
+    <li>Kararınızın, mevcut zararı büyütme riskini de içerdiğini göz önünde bulundurun.</li>
+  </ol>
+
+  <h2>Margin Call Riskini Azaltmak</h2>
+  <p>Margin call olasılığını tamamen ortadan kaldırmak mümkün değildir, ancak bilinçli bir yaklaşımla azaltılabilir. Aşırı kaldıraçtan kaçınmak, pozisyon büyüklüğünü toplam sermayeye göre ölçeklendirmek ve önceden belirlenen zarar durdurma seviyelerine bağlı kalmak temel yaklaşımlardır. Ayrıca hesapta belirli bir tampon (serbest teminat) bırakmak, ani fiyat hareketlerine karşı hareket alanı sağlar. Kaldıracı yüksek tutmanın yarattığı gizli tehlikeler hakkında <a href="asiri-kaldirac-tehlikesi.html">Aşırı kaldıracın gizli tehlikeleri</a> yazısını da inceleyebilirsiniz.</p>
+  <p>Aşağıdaki alışkanlıklar, margin call baskısını azaltmaya yardımcı olabilir:</p>
+  <ul>
+    <li>Sermayenin tamamını tek bir pozisyona bağlamamak.</li>
+    <li>Yüksek oynaklık dönemlerinde pozisyon büyüklüğünü daha da düşürmek.</li>
+    <li>Zarar durdurma seviyelerini duygusal kararlarla değil, plana göre belirlemek.</li>
+    <li>Kaldıracın kâr kadar zararı da büyüttüğünü sürekli göz önünde bulundurmak.</li>
+  </ul>
+  <p>Kapsamlı risk yönetimi ilkeleri için <a href="risk-yonetimi-forex.html">Forex'te risk yönetimi</a> yazımızı, kurumsal portföy çözümleri için ise <a href="../hizmetlerimiz.html">Hizmetlerimiz</a> sayfasını inceleyebilirsiniz.</p>
+
+  <h2>Sık Yapılan Yanlış Anlamalar</h2>
+  <p>Margin call konusunda yatırımcıların sıkça karşılaştığı birkaç yanılgı vardır. Bunların farkında olmak, gereksiz risk almayı önleyebilir:</p>
+  <ul>
+    <li><strong>"Margin call gelirse mutlaka müdahale şansım olur."</strong> Hızlı piyasalarda uyarı ile otomatik kapanış arasındaki süre çok kısalabilir.</li>
+    <li><strong>"Kaldıraç yüksekse kârım kesin artar."</strong> Kaldıraç, potansiyel kâr kadar potansiyel zararı da aynı oranda büyütür.</li>
+    <li><strong>"Ek teminat yatırırsam sorun çözülür."</strong> Ek teminat pozisyonu ayakta tutabilir, ancak piyasa aleyhe hareket etmeye devam ederse zarar da büyümeye devam eder.</li>
+  </ul>
+  <p>Bu içerik yatırım tavsiyesi niteliği taşımaz; amacı yalnızca teminat mekanizmasını ve olası riskleri açıklamaktır. Yatırımcı hakları ve süreçler hakkında <a href="../yatirimci-bilgilendirme.html">Yatırımcı Bilgilendirme</a> sayfamızdan bilgi edinebilirsiniz.</p>
+
+  <h2>Sık Sorulan Sorular</h2>
+  <div class="faq">
+    <h3>Margin call ile stop-out aynı şey mi?</h3><p>Hayır. Margin call, teminat seviyesinin belirli bir eşiğe düştüğünde gelen uyarıdır. Stop-out ise teminat daha da düştüğünde pozisyonların aracı kurum tarafından otomatik olarak kapatılmasıdır. Margin call genellikle stop-out'tan önce gelen bir erken uyarı niteliği taşır.</p>
+    <h3>Margin call aldığımda ne yapmalıyım?</h3><p>Genel olarak iki seçenek vardır: hesaba ek teminat yatırmak veya mevcut pozisyonların bir kısmını kapatarak teminat seviyesini yükseltmek. Hangi seçeneğin uygun olduğu risk durumunuza bağlıdır ve bu bir yatırım tavsiyesi değildir.</p>
+    <h3>Margin call'ı önlemek mümkün mü?</h3><p>Aşırı kaldıraçtan kaçınmak, pozisyon büyüklüğünü sermayeye göre ölçeklemek ve zarar durdurma emirleri kullanmak margin call olasılığını azaltabilir. Ancak piyasa koşulları her zaman kontrol edilemez ve risk tamamen ortadan kaldırılamaz.</p>
+    <h3>Teminat seviyesi nasıl hesaplanır?</h3><p>Teminat seviyesi genellikle özkaynağın (equity) kullanılan teminata (used margin) oranının yüzde olarak ifadesidir. Örneğin özkaynak kullanılan teminatın iki katıysa teminat seviyesi yaklaşık yüzde 200 olur. Bu oran düştükçe margin call ve stop-out eşiklerine yaklaşılır.</p>
+    <h3>Margin call gelmeden pozisyonlarım kapanabilir mi?</h3><p>Piyasa çok hızlı hareket ettiğinde teminat seviyesi kısa sürede stop-out eşiğinin altına inebilir. Bu durumda uyarı ile stop-out arasındaki süre çok kısalabilir veya pratikte fark edilmeyebilir; bu nedenle margin call'a bel bağlamak yerine önceden risk planı yapmak önemlidir.</p>
+  </div>
+
+  <div class="warn"><strong>Yasal Uyarı:</strong> Bu içerik eğitim ve tanıtım amaçlıdır; yatırım tavsiyesi değildir. Kaldıraçlı işlemler yüksek risk taşır. Yatırım kararı öncesi ilgili dokümanları okuyun ve yetkili kuruluşları <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a> üzerinden teyit edin.</div>
+
+  <div class="related"><strong>İlgili:</strong> <a href="../hizmetlerimiz.html">Hizmetlerimiz</a> · <a href="../yatirimci-bilgilendirme.html">Yatırımcı Bilgilendirme</a> · <a href="index.html">Tüm Blog Yazıları</a></div>
+  </article>
+</main>
+<footer class="site">
+  <div class="inner">
+    <p>© 2026 Cepte Portföy Yönetimi A.Ş. — Bu site Cepte Portföy'e aittir ve tanıtım amaçlıdır; yatırım tavsiyesi değildir.</p>
+    <p><a href="../hakkimizda.html">Hakkımızda</a> · <a href="../hizmetlerimiz.html">Hizmetlerimiz</a> · <a href="index.html">Blog</a> · <a href="../iletisim.html">İletişim</a> · <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a></p>
+  </div>
+</footer>
+</body>
+</html>

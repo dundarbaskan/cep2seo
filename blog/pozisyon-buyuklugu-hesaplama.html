@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pozisyon Büyüklüğü Nasıl Hesaplanır? Adım Adım Rehber</title>
+<meta name="description" content="Pozisyon büyüklüğü nedir ve nasıl hesaplanır? Risk yüzdesi, stop mesafesi ve lot ilişkisini örneklerle açıklayan pratik bir sermaye koruma rehberi.">
+<meta name="keywords" content="pozisyon büyüklüğü hesaplama, lot hesaplama, risk yüzdesi, stop mesafesi, sermaye yönetimi">
+<meta name="author" content="Cepte Portföy Yönetimi A.Ş.">
+<link rel="canonical" href="https://www.cepteportfoy.org/blog/pozisyon-buyuklugu-hesaplama.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pozisyon Büyüklüğü Nasıl Hesaplanır? Adım Adım Rehber">
+<meta property="og:description" content="Pozisyon büyüklüğü nedir ve nasıl hesaplanır? Risk yüzdesi, stop mesafesi ve lot ilişkisini örneklerle açıklayan pratik bir sermaye koruma rehberi.">
+<meta property="og:url" content="https://www.cepteportfoy.org/blog/pozisyon-buyuklugu-hesaplama.html">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Cepte Portföy">
+<meta property="og:image" content="https://www.cepteportfoy.org/assets/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0f5132">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../assets/site.webmanifest">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Pozisyon Büyüklüğü Nasıl Hesaplanır?",
+  "description": "Pozisyon büyüklüğü nedir ve nasıl hesaplanır? Risk yüzdesi, stop mesafesi ve lot ilişkisini örneklerle açıklayan pratik bir sermaye koruma rehberi.",
+  "inLanguage": "tr",
+  "datePublished": "2026-07-14",
+  "dateModified": "2026-07-14",
+  "image": "https://www.cepteportfoy.org/assets/favicon.svg",
+  "author": {"@type": "Organization", "name": "Cepte Portföy Yönetimi A.Ş."},
+  "publisher": {"@type": "Organization", "name": "Cepte Portföy Yönetimi A.Ş.", "logo": {"@type": "ImageObject", "url": "https://www.cepteportfoy.org/assets/favicon.svg"}},
+  "mainEntityOfPage": "https://www.cepteportfoy.org/blog/pozisyon-buyuklugu-hesaplama.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.cepteportfoy.org/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.cepteportfoy.org/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Pozisyon Büyüklüğü Nasıl Hesaplanır?"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Pozisyon büyüklüğü tam olarak nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Pozisyon büyüklüğü, bir işleme kaç birim ya da kaç lot ile girdiğinizi ifade eder. Doğru büyüklük; sermayenizi, kabul ettiğiniz risk yüzdesini ve stop mesafenizi birlikte dikkate alarak belirlenir."}},
+    {"@type": "Question", "name": "Her işlemde ne kadar risk almak makuldür?", "acceptedAnswer": {"@type": "Answer", "text": "Birçok kaynak, tek bir işlemde sermayenin küçük bir yüzdesinin riske edilmesini bir disiplin ilkesi olarak önerir. Kesin bir oran herkese uymaz; risk profilinize göre belirlenmeli ve tutarlı uygulanmalıdır. Bu bir yatırım tavsiyesi değildir."}},
+    {"@type": "Question", "name": "Stop mesafesi pozisyon büyüklüğünü nasıl etkiler?", "acceptedAnswer": {"@type": "Answer", "text": "Stop mesafesi genişledikçe aynı para riskini korumak için pozisyon küçülür; stop daraldıkça pozisyon büyüyebilir. Yani risk tutarı sabitken büyüklük, stop mesafesiyle ters orantılı değişir."}},
+    {"@type": "Question", "name": "Kaldıraç pozisyon büyüklüğü ile aynı şey mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Kaldıraç, kullandığınız teminatla ne kadar büyük bir pozisyon açabileceğinizi belirleyen bir imkândır; pozisyon büyüklüğü ise gerçekte ne kadar riske girdiğinizin ölçüsüdür. Yüksek kaldıraç, doğru pozisyon büyüklüğü kararının yerini tutmaz."}},
+    {"@type": "Question", "name": "Pozisyon büyüklüğünü her işlemde yeniden hesaplamak gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Tutarlı bir risk yaklaşımı için evet. Her işlemin stop mesafesi farklı olabileceğinden, aynı para riskini korumak için pozisyon büyüklüğü işlemden işleme değişir. Sabit lot yerine her işlemi kendi stop mesafesine göre ölçeklemek daha disiplinli bir yöntemdir."}}
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="logo" href="../index.html">Cepte <span>Portföy</span></a>
+    <nav class="main">
+      <a href="../index.html">Ana Sayfa</a>
+      <a href="../hakkimizda.html">Hakkımızda</a>
+      <a href="../hizmetlerimiz.html">Hizmetlerimiz</a>
+      <a href="../yatirimci-bilgilendirme.html">Yatırımcı Bilgilendirme</a>
+      <a href="index.html">Blog</a>
+      <a href="../iletisim.html">İletişim</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <p class="breadcrumb"><a href="../index.html">Ana Sayfa</a> › <a href="index.html">Blog</a> › Pozisyon Büyüklüğü Nasıl Hesaplanır?</p>
+  <article class="post">
+  <h1>Pozisyon Büyüklüğü Nasıl Hesaplanır?</h1>
+  <p class="post-meta">Yayın: 14 Temmuz 2026 · Kategori: Risk ve Kaldıraç</p>
+  <p class="lead">Pozisyon büyüklüğü, çoğu yatırımcının gözden kaçırdığı ama uzun vadede sonuçları en çok belirleyen kararlardan biridir. Doğru büyüklük; ne kadar sermayeniz olduğu, tek işlemde ne kadar riske girmeye razı olduğunuz ve stop seviyenizin ne kadar uzak olduğu bilgilerinin birlikte değerlendirilmesiyle bulunur.</p>
+
+  <h2>Pozisyon Büyüklüğü Neden Önemlidir?</h2>
+  <p>Piyasada doğru yönü bulmak tek başına yeterli değildir. İki yatırımcı aynı işlemi açsa bile, biri sermayesinin küçük bir kısmını, diğeri büyük bir kısmını riske ederse; aynı fiyat hareketi birinde küçük bir dalgalanma, diğerinde ciddi bir kayıp anlamına gelir. Pozisyon büyüklüğü, kararlarınızın sonuçlarının hesabınıza ne ölçüde yansıyacağını belirleyen ayardır.</p>
+  <p>Bu nedenle deneyimli yatırımcılar önce "haklıysam ne kazanırım" değil, "yanılırsam ne kaybederim" sorusuyla başlar. Pozisyon büyüklüğü işte bu ikinci sorunun cevabıdır ve <a href="risk-yonetimi-forex.html">risk yönetimi</a> yaklaşımının merkezinde yer alır.</p>
+  <p>Pozisyon büyüklüğünü ihmal etmenin sonucu çoğu zaman sinsi ilerler. Birkaç işlemde şans yaver gidebilir; ancak büyüklük sürekli olarak sermayeye göre fazla tutulursa, tek bir olumsuz seri hesabı ciddi biçimde eritebilir. Bu yüzden pozisyon büyüklüğü, kazançları büyütmekten çok, kayıpların sermayeyi kalıcı olarak yıpratmasını önlemeye yarayan bir savunma aracıdır. <a href="forex-neden-para-kaybettirir.html">Yatırımcıların forex'te neden para kaybettiği</a> incelendiğinde, sıklıkla yön tahmininden çok büyüklük ve risk yönetimi hatalarının öne çıktığı görülür.</p>
+
+  <h2>Hesaplamanın Üç Temel Bileşeni</h2>
+  <p>Pozisyon büyüklüğü hesaplaması genellikle üç girdiye dayanır:</p>
+  <ul>
+    <li><strong>Sermaye:</strong> İşlemler için ayırdığınız toplam tutar.</li>
+    <li><strong>Risk yüzdesi:</strong> Tek bir işlemde kaybetmeyi göze aldığınız oran. Bu oranı önceden belirlemek, duygusal anlarda karar vermenizi engeller.</li>
+    <li><strong>Stop mesafesi:</strong> Giriş fiyatınız ile stop-loss seviyeniz arasındaki uzaklık. Bu mesafe, bir birim düşüşün size ne kadara mal olacağını belirler.</li>
+  </ul>
+  <p>Bu üç bileşen bir araya geldiğinde, riske ettiğiniz para tutarı sabit kalırken pozisyon büyüklüğü otomatik olarak ortaya çıkar. <a href="stop-loss-kullanimi.html">Stop-loss kullanımı</a> ile pozisyon büyüklüğü bu yüzden birbirinden ayrı düşünülemez.</p>
+
+  <h2>Adım Adım Yaklaşım</h2>
+  <p>Genel mantığı basit bir sırayla özetleyebiliriz:</p>
+  <ul>
+    <li><strong>1. Risk tutarını belirleyin:</strong> Sermayenizin, önceden karar verdiğiniz risk yüzdesi kadarını hesaplayın. Bu, tek işlemde kaybetmeyi göze aldığınız para miktarıdır.</li>
+    <li><strong>2. Stop mesafesini ölçün:</strong> İşlem planınıza göre stop seviyenizin girişten ne kadar uzakta olduğunu belirleyin.</li>
+    <li><strong>3. Büyüklüğü türetin:</strong> Riske ettiğiniz para tutarını, birim başına kayba bölerek uygun pozisyon büyüklüğüne ulaşın. Stop yakınsa büyüklük artar, stop uzaksa büyüklük düşer.</li>
+  </ul>
+  <p>Buradaki en kritik nokta şudur: Risk tutarını sabit tutarsanız, farklı işlemlerde pozisyon büyüklüğünüz doğal olarak değişir. Aynı lotla her işleme girmek yerine, her işlemi kendi stop mesafesine göre ölçeklemek daha tutarlı bir yaklaşımdır.</p>
+
+  <h2>Örnekle Stop Mesafesi ve Büyüklük İlişkisi</h2>
+  <p>Aşağıdaki temsilî tablo, risk tutarı sabit tutulduğunda stop mesafesinin pozisyon büyüklüğünü nasıl belirlediğini gösterir. Rakamlar yalnızca mantığı açıklamak için kurgusaldır; gerçek işlem koşulları enstrümana ve piyasaya göre değişir.</p>
+  <table>
+    <thead>
+      <tr><th>Riske Edilen Tutar (sabit)</th><th>Stop Mesafesi</th><th>Sonuç: Pozisyon Büyüklüğü</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Sabit tutar</td><td>Dar stop</td><td>Daha büyük pozisyon</td></tr>
+      <tr><td>Sabit tutar</td><td>Orta stop</td><td>Orta büyüklükte pozisyon</td></tr>
+      <tr><td>Sabit tutar</td><td>Geniş stop</td><td>Daha küçük pozisyon</td></tr>
+    </tbody>
+  </table>
+  <p>Tablodan çıkan sonuç açıktır: Aynı miktar parayı riske ediyor olsanız bile, stop seviyenizi girişe yakın koyduğunuzda daha büyük, uzağa koyduğunuzda daha küçük bir pozisyonla aynı riski korursunuz. Bu yüzden "kaç lot açayım?" sorusunun cevabı, stop kararınızdan bağımsız verilemez.</p>
+
+  <h2>Pozisyon Büyüklüğü ile Kaldıraç Arasındaki Fark</h2>
+  <p>Yeni yatırımcıların en sık karıştırdığı iki kavram kaldıraç ile pozisyon büyüklüğüdür. Kaldıraç, elinizdeki teminatla ne kadar büyük bir işlem açabileceğinizi belirleyen bir imkândır. Pozisyon büyüklüğü ise o işlemde gerçekte ne kadar riske girdiğinizin ölçüsüdür.</p>
+  <p>Yüksek kaldıraç, daha büyük pozisyon açmayı teknik olarak mümkün kılar; ancak bu, mutlaka öyle yapmanız gerektiği anlamına gelmez. Riskinizi belirleyen şey kaldıraç oranı değil, sermayenize göre ne kadar pozisyon taşıdığınız ve stop mesafenizdir. Bu ayrımı gözden kaçırmak, <a href="asiri-kaldirac-tehlikesi.html">aşırı kaldıracın gizli tehlikeleri</a> ve <a href="kaldirac-nedir.html">kaldıracın doğru anlaşılması</a> yazılarımızda ele aldığımız kayıpların başlıca nedenidir. Kaldıraç ve teminat ilişkisinin sınırına ulaşıldığında ise <a href="margin-call-nedir.html">margin call</a> gündeme gelir.</p>
+
+  <h2>Sık Yapılan Hatalar</h2>
+  <p>Yatırımcıların pozisyon büyüklüğünde en çok düştüğü tuzaklar şunlardır:</p>
+  <ul>
+    <li><strong>Sabit lot alışkanlığı:</strong> Stop mesafesi ne olursa olsun hep aynı büyüklükle işlem açmak, riski işlemden işleme dalgalandırır.</li>
+    <li><strong>Kaldıracı büyüklük sanmak:</strong> Yüksek kaldıraç kullanmak, pozisyon büyüklüğü kararının yerini tutmaz. Bu ikisinin karıştırılması <a href="asiri-kaldirac-tehlikesi.html">aşırı kaldıraç</a> kaynaklı kayıpların başlıca sebebidir.</li>
+    <li><strong>Zarardan sonra büyütmek:</strong> Kaybı hızlıca geri almak için pozisyonu büyütmek, çoğu zaman riski katlar ve <a href="duygusal-yatirim-hatalari.html">duygusal hatalar</a> zincirini başlatır.</li>
+    <li><strong>Stop'suz işlem:</strong> Stop belirlenmeden pozisyon büyüklüğü matematiksel olarak sağlıklı hesaplanamaz.</li>
+  </ul>
+  <p>Portföyünüzü profesyonel bir çerçevede değerlendirmek isterseniz <a href="../hizmetlerimiz.html">hizmetlerimiz</a> sayfasını ve genel ilkeler için <a href="../yatirimci-bilgilendirme.html">yatırımcı bilgilendirme</a> içeriklerimizi inceleyebilirsiniz.</p>
+
+  <h2>Sık Sorulan Sorular</h2>
+  <div class="faq">
+    <h3>Pozisyon büyüklüğü tam olarak nedir?</h3><p>Pozisyon büyüklüğü, bir işleme kaç birim ya da kaç lot ile girdiğinizi ifade eder. Doğru büyüklük; sermayenizi, kabul ettiğiniz risk yüzdesini ve stop mesafenizi birlikte dikkate alarak belirlenir.</p>
+    <h3>Her işlemde ne kadar risk almak makuldür?</h3><p>Birçok kaynak, tek bir işlemde sermayenin küçük bir yüzdesinin riske edilmesini bir disiplin ilkesi olarak önerir. Kesin bir oran herkese uymaz; risk profilinize göre belirlenmeli ve tutarlı uygulanmalıdır. Bu bir yatırım tavsiyesi değildir.</p>
+    <h3>Stop mesafesi pozisyon büyüklüğünü nasıl etkiler?</h3><p>Stop mesafesi genişledikçe aynı para riskini korumak için pozisyon küçülür; stop daraldıkça pozisyon büyüyebilir. Yani risk tutarı sabitken büyüklük, stop mesafesiyle ters orantılı değişir.</p>
+    <h3>Kaldıraç pozisyon büyüklüğü ile aynı şey mi?</h3><p>Hayır. Kaldıraç, kullandığınız teminatla ne kadar büyük bir pozisyon açabileceğinizi belirleyen bir imkândır; pozisyon büyüklüğü ise gerçekte ne kadar riske girdiğinizin ölçüsüdür. Yüksek kaldıraç, doğru pozisyon büyüklüğü kararının yerini tutmaz.</p>
+    <h3>Pozisyon büyüklüğünü her işlemde yeniden hesaplamak gerekir mi?</h3><p>Tutarlı bir risk yaklaşımı için evet. Her işlemin stop mesafesi farklı olabileceğinden, aynı para riskini korumak için pozisyon büyüklüğü işlemden işleme değişir. Sabit lot yerine her işlemi kendi stop mesafesine göre ölçeklemek daha disiplinli bir yöntemdir.</p>
+  </div>
+
+  <div class="warn"><strong>Yasal Uyarı:</strong> Bu içerik eğitim ve tanıtım amaçlıdır; yatırım tavsiyesi değildir. Kaldıraçlı işlemler yüksek risk taşır. Yatırım kararı öncesi ilgili dokümanları okuyun ve yetkili kuruluşları <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a> üzerinden teyit edin.</div>
+
+  <div class="related"><strong>İlgili:</strong> <a href="../hizmetlerimiz.html">Hizmetlerimiz</a> · <a href="../yatirimci-bilgilendirme.html">Yatırımcı Bilgilendirme</a> · <a href="index.html">Tüm Blog Yazıları</a></div>
+  </article>
+</main>
+<footer class="site">
+  <div class="inner">
+    <p>© 2026 Cepte Portföy Yönetimi A.Ş. — Bu site Cepte Portföy'e aittir ve tanıtım amaçlıdır; yatırım tavsiyesi değildir.</p>
+    <p><a href="../hakkimizda.html">Hakkımızda</a> · <a href="../hizmetlerimiz.html">Hizmetlerimiz</a> · <a href="index.html">Blog</a> · <a href="../iletisim.html">İletişim</a> · <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a></p>
+  </div>
+</footer>
+</body>
+</html>
