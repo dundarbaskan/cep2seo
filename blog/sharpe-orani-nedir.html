@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sharpe Oranı Nedir? Risk Ayarlı Getiri | Cep Portfoy</title>
+<meta name="description" content="Sharpe oranı nedir, nasıl hesaplanır ve neyi ölçer? Risk ayarlı getiri, standart sapma, risksiz faiz ve oranın sınırları sade bir dille anlatılıyor.">
+<meta name="keywords" content="sharpe oranı nedir, risk ayarlı getiri, standart sapma, sortino oranı, fon performans ölçümü">
+<meta name="author" content="Cep Portfoy Yönetimi A.Ş.">
+<link rel="canonical" href="https://ceportfoy.net/blog/sharpe-orani-nedir.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sharpe Oranı Nedir? Risk Ayarlı Getiri | Cep Portfoy">
+<meta property="og:description" content="Sharpe oranı nedir, nasıl hesaplanır ve neyi ölçer? Risk ayarlı getiri, standart sapma, risksiz faiz ve oranın sınırları sade bir dille anlatılıyor.">
+<meta property="og:url" content="https://ceportfoy.net/blog/sharpe-orani-nedir.html">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Cep Portfoy">
+<meta property="og:image" content="https://ceportfoy.net/assets/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0f5132">
+<link rel="icon" type="image/png" href="../assets/img/icon.png">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/blog.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Sharpe Oranı Nedir? Risk Ayarlı Getiriyi Anlamak",
+  "description": "Sharpe oranı nedir, nasıl hesaplanır ve neyi ölçer? Risk ayarlı getiri, standart sapma, risksiz faiz ve oranın sınırları sade bir dille anlatılıyor.",
+  "inLanguage": "tr",
+  "datePublished": "2026-07-24",
+  "dateModified": "2026-07-24",
+  "image": "https://ceportfoy.net/assets/favicon.svg",
+  "author": {"@type": "Organization", "name": "Cep Portfoy Yönetimi A.Ş."},
+  "publisher": {"@type": "Organization", "name": "Cep Portfoy Yönetimi A.Ş.", "logo": {"@type": "ImageObject", "url": "https://ceportfoy.net/assets/favicon.svg"}},
+  "mainEntityOfPage": "https://ceportfoy.net/blog/sharpe-orani-nedir.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://ceportfoy.net/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ceportfoy.net/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Sharpe Oranı Nedir? Risk Ayarlı Getiriyi Anlamak"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Sharpe oranı nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Sharpe oranı, bir portföyün risksiz getirinin üzerinde elde ettiği fazla getiriyi, o portföyün getiri dalgalanmasına (standart sapmasına) bölen bir ölçüttür. Kısaca 'alınan birim risk başına ne kadar fazla getiri elde edildiğini' özetler ve iktisatçı William F. Sharpe tarafından geliştirilmiştir."}},
+    {"@type": "Question", "name": "Sharpe oranı nasıl hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "Formül şu şekildedir: (Portföyün getirisi − risksiz getiri) / portföy getirilerinin standart sapması. Pay kısmı fazla getiriyi, payda kısmı ise getirilerin ortalamadan ne kadar saptığını, yani dalgalanmayı gösterir. Hesaplamanın anlamlı olması için getiri ve risksiz oran verilerinin aynı dönemi kapsaması gerekir."}},
+    {"@type": "Question", "name": "Yüksek Sharpe oranı iyi yatırım anlamına mı gelir?", "acceptedAnswer": {"@type": "Answer", "text": "Yüksek bir oran, geçmiş dönemde alınan birim risk başına daha fazla getiri elde edildiğini gösterir; ancak bu geçmişe ait bir ölçümdür ve gelecekteki performansın güvencesi değildir. Ayrıca kısa dönemler, seçilen zaman aralığı ve olağandışı piyasa koşulları oranı yanıltıcı biçimde yüksek ya da düşük gösterebilir."}},
+    {"@type": "Question", "name": "Sharpe oranı ile Sortino oranı arasındaki fark nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Sharpe oranı, yukarı ve aşağı yöndeki tüm dalgalanmaları risk sayar. Sortino oranı ise yalnızca hedefin altında kalan, yani olumsuz yöndeki sapmaları dikkate alır. Yatırımcıların çoğu yukarı yöndeki dalgalanmayı sorun olarak görmediği için Sortino oranı bazı durumlarda daha sezgisel bir tablo sunabilir."}},
+    {"@type": "Question", "name": "İki fonun Sharpe oranı doğrudan karşılaştırılabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Ancak aynı dönem, aynı hesaplama sıklığı ve aynı risksiz getiri varsayımı kullanıldıysa karşılaştırma anlamlı olur. Farklı varlık sınıflarına yatırım yapan fonlarda ise oran tek başına yeterli değildir; fonun stratejisi, karşılaştırma ölçütü, maliyetleri ve likidite koşulları da birlikte değerlendirilmelidir."}}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="top-section blog-top">
+<header>
+        <div class="header-container">
+          <div class="header-left">
+            <div class="logo">
+              <a href="../tr/">
+                <img src="../assets/img/logo1.png" alt="Cep Portfoy" />
+              </a>
+            </div>
+
+            <button class="hamburger" aria-label="Toggle menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="header-right">
+            <nav class="nav-wrapper">
+              <div class="mobile-header">
+                <button class="close-menu" aria-label="Close menu">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <ul class="nav-menu">
+                <li><a href="../tr/">Ana Sayfa</a></li>
+                <li><a href="../tr/pages/about.html">Hakkımızda</a></li>
+                <li class="has-submenu">
+                  <a href="#">Şirket Profili</a>
+                  <ul class="sub-menu">
+                    <li><a href="../tr/pages/terms.html">Şartlar ve Koşullar</a></li>
+                    <li>
+                      <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../tr/pages/contact-us.html">İletişim</a></li>
+                <li class="current"><a href="index.html">Blog</a></li>
+              </ul>
+
+              <a
+                href="https://appzone.ceportfoy.net/#/auth/register"
+                class="cta-button"
+                >Başlayın</a
+              >
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-button" id="languageBtn">
+                <img
+                  src="https://flagcdn.com/w40/tr.png"
+                  alt="English"
+                  id="currentFlag"
+                />
+                <span id="currentLang">Turkish</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+
+              <div class="language-dropdown" id="languageDropdown">
+                <a href="../index.html">
+                  <div class="language-option" data-lang="en" data-flag="gb">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+                    <span>English</span>
+                  </div></a
+                >
+
+                <div class="language-option" data-lang="tr" data-flag="tr">
+                  <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" />
+                  <span>Turkish</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+</div>
+<main>
+  <p class="breadcrumb"><a href="../index.html">Ana Sayfa</a> › <a href="index.html">Blog</a> › Sharpe Oranı Nedir?</p>
+  <article class="post">
+  <h1>Sharpe Oranı Nedir? Risk Ayarlı Getiriyi Anlamak</h1>
+  <p class="post-meta">Yayın: 24 Temmuz 2026 · Kategori: Risk ve Kaldıraç</p>
+  <p class="lead">İki farklı yatırımdan biri geçen yıl daha yüksek getiri sağladıysa, otomatik olarak "daha iyi" midir? Bu soruya sadece getiri rakamına bakarak verilen yanıt eksik kalır; çünkü o getiriyi elde etmek için ne kadar risk alındığı görülmez. Sharpe oranı, tam da bu boşluğu doldurmak için tasarlanmış bir ölçüttür. Bu yazıda Sharpe oranının ne olduğunu, nasıl hesaplandığını, nasıl yorumlanması gerektiğini ve nerede yanıltıcı olabileceğini sade bir dille açıklıyoruz.</p>
+
+  <h2>Sharpe Oranı Ne Ölçer?</h2>
+  <p>Sharpe oranı, iktisatçı William F. Sharpe tarafından geliştirilen ve bugün finans dünyasında en yaygın kullanılan performans ölçütlerinden biri hâline gelen bir göstergedir. Temel fikri şudur: bir yatırımın getirisi tek başına anlamlı değildir; o getirinin ne kadar dalgalanma pahasına elde edildiği de bilinmelidir.</p>
+  <p>Bunu bir benzetmeyle düşünebiliriz. İki sürücüden biri yolculuğu bir saatte, diğeri bir buçuk saatte tamamlamış olsun. Yalnızca süreye bakarsanız birinci sürücü daha başarılıdır. Ancak birinci sürücü bunu sürekli şerit değiştirerek ve hız sınırlarını zorlayarak yaptıysa, "başarı" tanımı değişir. Sharpe oranı, finansal dünyada bu ikinci boyutu — yani yolculuğun ne kadar sarsıntılı geçtiğini — hesaba katar.</p>
+  <p>Ölçütün odağındaki "risk" tanımı, getirilerin dalgalanmasıdır. Bir portföyün getirisi aylar arasında sert biçimde iniyor çıkıyorsa, bu portföy daha risklidir. Dalgalanmanın nasıl ölçüldüğünü ve neden yatırımcı davranışını etkilediğini <a href="volatilite-nedir.html">volatilite nedir</a> yazımızda ayrıntılı ele almıştık.</p>
+
+  <h2>Sharpe Oranı Nasıl Hesaplanır?</h2>
+  <p>Formül üç bileşenden oluşur ve göründüğünden daha basittir:</p>
+  <p><strong>Sharpe Oranı = (Portföyün Getirisi − Risksiz Getiri) ÷ Portföy Getirilerinin Standart Sapması</strong></p>
+  <table>
+    <thead>
+      <tr><th>Bileşen</th><th>Ne İfade Eder?</th><th>Neden Önemli?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Portföyün getirisi</td><td>Belirli bir dönemde elde edilen toplam getiri</td><td>Ölçümün çıkış noktasıdır</td></tr>
+      <tr><td>Risksiz getiri</td><td>Risk almadan elde edilebilecek kabul edilen referans getiri</td><td>Fazla getirinin doğru hesaplanmasını sağlar</td></tr>
+      <tr><td>Standart sapma</td><td>Getirilerin ortalamadan ne kadar saptığı</td><td>Alınan riskin ölçüsüdür</td></tr>
+    </tbody>
+  </table>
+  <p>Payda yer alan "fazla getiri", risksiz kabul edilen bir alternatife göre ne kadar ek kazanç sağlandığını gösterir. Buradaki mantık şudur: eğer bir portföy, risk almadan elde edilebilecek getiriyi ancak yakalayabiliyorsa, alınan riskin bir karşılığı yok demektir. Paydaki standart sapma ise bu ek getirinin ne kadar dalgalı bir yolculukla elde edildiğini ifade eder.</p>
+  <p>Hesaplamanın anlamlı olması için tüm verilerin aynı dönemi ve aynı sıklığı kapsaması gerekir. Aylık getirilerle hesaplanan bir oran ile yıllık getirilerle hesaplanan bir oranı yan yana koymak yanıltıcı olur. Benzer şekilde, farklı risksiz getiri varsayımları kullanan iki hesaplama da doğrudan karşılaştırılamaz.</p>
+
+  <h2>Oran Nasıl Yorumlanır?</h2>
+  <p>Sharpe oranının yorumu, mutlak eşiklerden çok karşılaştırmaya dayanır. Genel çerçeve şöyledir:</p>
+  <ul>
+    <li><strong>Oran sıfırın altındaysa:</strong> Portföy, incelenen dönemde risksiz alternatifin gerisinde kalmıştır. Yani alınan risk, karşılığını vermemiştir.</li>
+    <li><strong>Oran sıfıra yakınsa:</strong> Fazla getiri, alınan dalgalanmayı zar zor karşılamıştır.</li>
+    <li><strong>Oran yükseldikçe:</strong> Birim risk başına elde edilen fazla getiri artmıştır; bu, incelenen dönem için olumlu bir işaret sayılır.</li>
+  </ul>
+  <p>Burada kritik nokta şudur: hiçbir sabit eşik "iyi" ya da "kötü" için evrensel bir sınır oluşturmaz. Bir tahvil ağırlıklı portföy ile hisse ağırlıklı bir portföyün oranları doğal olarak farklı aralıklarda oluşur. Bu nedenle Sharpe oranı, benzer stratejileri ve benzer varlık sınıflarını aynı dönem içinde kıyaslarken en anlamlı sonucu verir.</p>
+  <p>Bir fonu değerlendirirken oranın yanına mutlaka fonun stratejisi, karşılaştırma ölçütü ve maliyet yapısı da konulmalıdır. Bu bilgilerin nerede yer aldığını <a href="izahname-nasil-okunur.html">fon izahnamesi nasıl okunur</a> yazımızda, maliyetlerin getiriyi nasıl aşındırdığını ise <a href="fon-ucretleri.html">fon yönetim ücretleri</a> yazımızda anlattık.</p>
+
+  <h2>Sharpe Oranının Sınırları</h2>
+  <p>Hiçbir tek ölçüt, bir yatırımın tüm hikâyesini anlatmaz. Sharpe oranının bilinmesi gereken belirgin sınırları vardır:</p>
+  <ol>
+    <li><strong>Yukarı yönlü dalgalanmayı da risk sayar:</strong> Formül, getirinin beklenenden fazla yükselmesini de "sapma" olarak değerlendirir. Oysa yatırımcıların çoğu için asıl rahatsızlık kaynağı aşağı yöndeki hareketlerdir.</li>
+    <li><strong>Geçmişe bakar:</strong> Oran, gerçekleşmiş verilerle hesaplanır. Geçmiş dönemde yüksek çıkan bir oran, gelecekte de aynı sonucun tekrarlanacağının güvencesi değildir.</li>
+    <li><strong>Dönem seçimine duyarlıdır:</strong> Hangi tarih aralığının seçildiği sonucu belirgin biçimde değiştirebilir. Kısa ve olağandışı bir dönem, gerçekçi olmayan bir tablo yaratabilir.</li>
+    <li><strong>Nadir ama sert olayları eksik yansıtabilir:</strong> Standart sapma, çok seyrek görülen fakat büyük kayıplara yol açan hareketleri her zaman yeterince ağırlıklandırmaz.</li>
+    <li><strong>Likidite farklarını görmez:</strong> Nadiren fiyatlanan varlıklar, gerçekte olduğundan daha düşük dalgalanmalı görünebilir. Bu konuyu <a href="likidite-nedir.html">likidite nedir</a> yazımızda ele aldık.</li>
+  </ol>
+  <p>Bu sınırlar, oranın işe yaramaz olduğu anlamına gelmez; yalnızca tek başına kullanılmaması gerektiğini gösterir. Sharpe oranı bir başlangıç sorusudur: "Bu getiri, ne kadar dalgalanma karşılığında elde edildi?" Yanıt, daha ayrıntılı incelemenin kapısını açar.</p>
+
+  <h2>Sortino Oranı ve Diğer Tamamlayıcı Ölçütler</h2>
+  <p>Sharpe oranının yukarı yönlü dalgalanmayı da cezalandırması eleştirisi, alternatif ölçütlerin doğmasına yol açmıştır. Bunların en bilineni Sortino oranıdır. Sortino, yalnızca hedefin altında kalan sapmaları dikkate alır; yani "kötü dalgalanmaya" odaklanır. Yatırımcının kaygısı esas olarak kayıp yönündeyse, bu ölçüt daha sezgisel bir tablo sunabilir.</p>
+  <p>Bunların yanında portföyün zirveden en derin düşüşünü gösteren maksimum kayıp ölçümleri de yaygın olarak kullanılır. Bir portföyün geçmişte ne kadar geri çekildiğini bilmek, yatırımcının o dalgalanmaya psikolojik olarak dayanıp dayanamayacağını değerlendirmesine yardımcı olur. Bu psikolojik boyutu <a href="duygusal-yatirim-hatalari.html">yatırımda duygusal hatalar</a> yazımızda inceledik.</p>
+  <p>Ölçütleri tek tek değil, bir arada okumak gerekir. Bir portföy yüksek Sharpe oranına sahip görünürken sert bir geri çekilme yaşamış olabilir ya da tersi. Farklı açılardan bakan göstergeler, birlikte kullanıldığında daha dürüst bir resim verir.</p>
+
+  <h2>Yatırımcı Bu Oranı Nasıl Kullanmalı?</h2>
+  <p>Sharpe oranını kullanmanın en sağlıklı yolu, onu bir "seçim aracı" değil bir "soru üretici" olarak görmektir. Bir fonun ya da portföyün oranı düşükse, bunun nedenini araştırmak gerekir: strateji mi değişti, piyasa koşulları mı olağandışıydı, maliyetler mi yüksek? Oran yüksekse de aynı merak sürmelidir: bu sonuç sürdürülebilir bir yaklaşımdan mı, yoksa dönemsel bir şanstan mı kaynaklandı?</p>
+  <p>İkinci önemli nokta, oranın kendi risk profilinizle ilişkilendirilmesidir. Yüksek Sharpe oranına sahip bir portföy, sizin taşıyabileceğinizden çok daha yüksek bir dalgalanmaya sahip olabilir. Kendi risk toleransınızı belirleme sürecini <a href="risk-profili-belirleme.html">risk profili nasıl belirlenir</a> yazımızda, portföy ağırlıklarının kurulmasını ise <a href="varlik-dagilimi-nedir.html">varlık dağılımı nedir</a> yazımızda ele aldık.</p>
+  <p>Cep Portfoy olarak, yatırımcının kullandığı her göstergenin neyi ölçtüğünü ve neyi ölçmediğini bilmesinin bilinçli karar almanın temeli olduğuna inanıyoruz. Kurumsal yapımız hakkında bilgi almak için <a href="../tr/pages/about.html">Hakkımızda</a> sayfamızı inceleyebilir, sorularınızı <a href="../tr/pages/contact-us.html">İletişim</a> sayfamız üzerinden iletebilirsiniz. Genel hizmet çerçevemiz için <a href="../tr/index.html">ana sayfamıza</a> göz atabilirsiniz.</p>
+
+  <h2>Sık Sorulan Sorular</h2>
+  <div class="faq">
+    <h3>Sharpe oranı nedir?</h3><p>Sharpe oranı, bir portföyün risksiz getirinin üzerinde elde ettiği fazla getiriyi, o portföyün getiri dalgalanmasına (standart sapmasına) bölen bir ölçüttür. Kısaca "alınan birim risk başına ne kadar fazla getiri elde edildiğini" özetler ve iktisatçı William F. Sharpe tarafından geliştirilmiştir.</p>
+    <h3>Sharpe oranı nasıl hesaplanır?</h3><p>Formül şu şekildedir: (Portföyün getirisi − risksiz getiri) / portföy getirilerinin standart sapması. Pay kısmı fazla getiriyi, payda kısmı ise getirilerin ortalamadan ne kadar saptığını, yani dalgalanmayı gösterir. Hesaplamanın anlamlı olması için getiri ve risksiz oran verilerinin aynı dönemi kapsaması gerekir.</p>
+    <h3>Yüksek Sharpe oranı iyi yatırım anlamına mı gelir?</h3><p>Yüksek bir oran, geçmiş dönemde alınan birim risk başına daha fazla getiri elde edildiğini gösterir; ancak bu geçmişe ait bir ölçümdür ve gelecekteki performansın güvencesi değildir. Ayrıca kısa dönemler, seçilen zaman aralığı ve olağandışı piyasa koşulları oranı yanıltıcı biçimde yüksek ya da düşük gösterebilir.</p>
+    <h3>Sharpe oranı ile Sortino oranı arasındaki fark nedir?</h3><p>Sharpe oranı, yukarı ve aşağı yöndeki tüm dalgalanmaları risk sayar. Sortino oranı ise yalnızca hedefin altında kalan, yani olumsuz yöndeki sapmaları dikkate alır. Yatırımcıların çoğu yukarı yöndeki dalgalanmayı sorun olarak görmediği için Sortino oranı bazı durumlarda daha sezgisel bir tablo sunabilir.</p>
+    <h3>İki fonun Sharpe oranı doğrudan karşılaştırılabilir mi?</h3><p>Ancak aynı dönem, aynı hesaplama sıklığı ve aynı risksiz getiri varsayımı kullanıldıysa karşılaştırma anlamlı olur. Farklı varlık sınıflarına yatırım yapan fonlarda ise oran tek başına yeterli değildir; fonun stratejisi, karşılaştırma ölçütü, maliyetleri ve likidite koşulları da birlikte değerlendirilmelidir.</p>
+  </div>
+
+  <div class="warn"><strong>Yasal Uyarı:</strong> Bu içerik eğitim ve tanıtım amaçlıdır; yatırım tavsiyesi değildir. Kaldıraçlı işlemler yüksek risk taşır ve yatırılan sermayenin tamamı kaybedilebilir. Yatırım kararı öncesi ilgili dokümanları okuyun ve yetkili kuruluşları <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a> üzerinden teyit edin.</div>
+
+  <div class="related"><strong>İlgili:</strong> <a href="volatilite-nedir.html">Volatilite Nedir?</a> · <a href="risk-profili-belirleme.html">Risk Profili Nasıl Belirlenir?</a> · <a href="index.html">Tüm Blog Yazıları</a></div>
+  </article>
+</main>
+<footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="../assets/img/footer-logo1.png" alt="Cep Portfoy" />
+            </div>
+            <nav class="footer-nav">
+              <a href="../tr/">Ana Sayfa</a>
+              <a href="../tr/pages/about.html">Hakkımızda</a>
+              <a href="../tr/pages/contact-us.html">İletişim</a>
+            </nav>
+            <div class="footer-legal">
+              <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+              <a href="../tr/pages/terms.html">Şartlar ve Koşullar</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-copyright">© Cep Portfoy</div>
+            <div class="footer-payment">
+              <a href="https://x.com/cepportfoy"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/cepportfoy/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://wa.me/905368910655" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
