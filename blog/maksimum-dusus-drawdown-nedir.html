@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maksimum Düşüş (Drawdown) Nedir? | Cep Portföy</title>
+<meta name="description" content="Maksimum düşüş (drawdown) nedir, nasıl hesaplanır ve neden volatiliteden farklıdır? Portföy riskini zirveden dibe ölçen bu kavramı örneklerle açıklıyoruz.">
+<meta name="keywords" content="maksimum düşüş nedir, drawdown nedir, maximum drawdown, portföy düşüşü, geri kazanım oranı">
+<meta name="author" content="Cep Portföy Yönetimi A.Ş.">
+<link rel="canonical" href="https://ceportfoy.net/blog/maksimum-dusus-drawdown-nedir.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Maksimum Düşüş (Drawdown) Nedir? | Cep Portföy">
+<meta property="og:description" content="Maksimum düşüş (drawdown) nedir, nasıl hesaplanır ve neden volatiliteden farklıdır? Portföy riskini zirveden dibe ölçen bu kavramı örneklerle açıklıyoruz.">
+<meta property="og:url" content="https://ceportfoy.net/blog/maksimum-dusus-drawdown-nedir.html">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Cep Portföy">
+<meta property="og:image" content="https://ceportfoy.net/assets/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0f5132">
+<link rel="icon" type="image/png" href="../assets/img/icon.png">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/blog.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Maksimum Düşüş (Drawdown) Nedir? Portföy Riskini Zirveden Dibe Ölçmek",
+  "description": "Maksimum düşüş (drawdown) nedir, nasıl hesaplanır ve neden volatiliteden farklıdır? Portföy riskini zirveden dibe ölçen bu kavramı örneklerle açıklıyoruz.",
+  "inLanguage": "tr",
+  "datePublished": "2026-07-29",
+  "dateModified": "2026-07-29",
+  "image": "https://ceportfoy.net/assets/favicon.svg",
+  "author": {"@type": "Organization", "name": "Cep Portföy Yönetimi A.Ş."},
+  "publisher": {"@type": "Organization", "name": "Cep Portföy Yönetimi A.Ş.", "logo": {"@type": "ImageObject", "url": "https://ceportfoy.net/assets/favicon.svg"}},
+  "mainEntityOfPage": "https://ceportfoy.net/blog/maksimum-dusus-drawdown-nedir.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://ceportfoy.net/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ceportfoy.net/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Maksimum Düşüş (Drawdown) Nedir? Portföy Riskini Zirveden Dibe Ölçmek"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Maksimum düşüş (drawdown) nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Maksimum düşüş, bir portföyün veya varlığın belirli bir dönem içinde ulaştığı en yüksek değerden sonraki en düşük değerine kadar yaşadığı yüzdesel kaybı ifade eder. Kısaca zirveden dibe olan en büyük gerilemeyi ölçer."}},
+    {"@type": "Question", "name": "Maksimum düşüş ile volatilite arasındaki fark nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Volatilite, getirilerin ortalama etrafındaki genel dalgalanmasını ölçer ve yukarı yönlü hareketleri de içerir. Maksimum düşüş ise yalnızca aşağı yönlü ve gerçekleşmiş en kötü senaryoya bakar. Bu nedenle yatırımcının deneyimlediği kayıp hissine daha yakın bir ölçüdür."}},
+    {"@type": "Question", "name": "Yüzde 50 düşen bir portföy eski seviyesine dönmek için ne kadar yükselmelidir?", "acceptedAnswer": {"@type": "Answer", "text": "Yüzde 50 değer kaybeden bir portföyün başlangıç seviyesine dönmesi için yüzde 100 yükselmesi gerekir. Bunun nedeni, kaybın ardından hesaplamanın daha küçük bir tabandan yapılmasıdır. Düşüş derinleştikçe gereken toparlanma orantısız biçimde büyür."}},
+    {"@type": "Question", "name": "Düşük maksimum düşüş her zaman daha iyi midir?", "acceptedAnswer": {"@type": "Answer", "text": "Tek başına değerlendirildiğinde yanıltıcı olabilir. Kısa bir gözlem döneminde ölçülen düşük maksimum düşüş, portföyün henüz zorlu bir piyasa dönemi görmediği anlamına gelebilir. Ölçünün anlamlı olması için yeterince uzun ve farklı piyasa koşullarını kapsayan bir dönem gerekir."}},
+    {"@type": "Question", "name": "Maksimum düşüş gelecekteki kaybın üst sınırı mıdır?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Maksimum düşüş geçmişte gerçekleşmiş bir değeri gösterir; gelecekte daha büyük bir düşüş yaşanmayacağının güvencesi değildir. Geçmiş veriler gelecek performans için taahhüt oluşturmaz."}}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="top-section blog-top">
+<header>
+        <div class="header-container">
+          <div class="header-left">
+            <div class="logo">
+              <a href="../tr/">
+                <img src="../assets/img/logo1.png" alt="Cep Portfoy" />
+              </a>
+            </div>
+
+            <button class="hamburger" aria-label="Toggle menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="header-right">
+            <nav class="nav-wrapper">
+              <div class="mobile-header">
+                <button class="close-menu" aria-label="Close menu">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <ul class="nav-menu">
+                <li><a href="../tr/">Ana Sayfa</a></li>
+                <li><a href="../tr/pages/about.html">Hakkımızda</a></li>
+                <li class="has-submenu">
+                  <a href="#">Şirket Profili</a>
+                  <ul class="sub-menu">
+                    <li><a href="../tr/pages/terms.html">Şartlar ve Koşullar</a></li>
+                    <li>
+                      <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../tr/pages/contact-us.html">İletişim</a></li>
+                <li class="current"><a href="index.html">Blog</a></li>
+              </ul>
+
+              <a
+                href="https://appzone.ceportfoy.net/#/auth/register"
+                class="cta-button"
+                >Başlayın</a
+              >
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-button" id="languageBtn">
+                <img
+                  src="https://flagcdn.com/w40/tr.png"
+                  alt="English"
+                  id="currentFlag"
+                />
+                <span id="currentLang">Turkish</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+
+              <div class="language-dropdown" id="languageDropdown">
+                <a href="../index.html">
+                  <div class="language-option" data-lang="en" data-flag="gb">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+                    <span>English</span>
+                  </div></a
+                >
+
+                <div class="language-option" data-lang="tr" data-flag="tr">
+                  <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" />
+                  <span>Turkish</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+</div>
+<main>
+  <p class="breadcrumb"><a href="../index.html">Ana Sayfa</a> › <a href="index.html">Blog</a> › Maksimum Düşüş (Drawdown) Nedir?</p>
+  <article class="post">
+  <h1>Maksimum Düşüş (Drawdown) Nedir? Portföy Riskini Zirveden Dibe Ölçmek</h1>
+  <p class="post-meta">Yayın: 29 Temmuz 2026 · Kategori: Risk ve Kaldıraç</p>
+  <p class="lead">Yatırımcılar bir portföyün riskini genellikle tek bir sayıya indirgemeye çalışır. Oysa risk, kâğıt üzerindeki bir istatistikten çok, insanın gerçekten yaşadığı bir deneyimdir: hesap bakiyesinin en yüksek gördüğü seviyeden ne kadar geriye düştüğü. Maksimum düşüş, tam olarak bu deneyimi ölçmeye çalışan bir göstergedir. Bu yazıda maksimum düşüşün ne olduğunu, nasıl hesaplandığını, volatiliteden hangi noktalarda ayrıldığını ve portföy planlamasında nasıl kullanıldığını sade bir dille ele alıyoruz.</p>
+
+  <h2>Maksimum Düşüş Ne Anlama Gelir?</h2>
+  <p>Maksimum düşüş (İngilizce karşılığıyla <em>maximum drawdown</em>), bir portföyün ya da varlığın belirli bir dönem içinde ulaştığı en yüksek değerden, sonrasında gördüğü en düşük değere kadar yaşadığı yüzdesel kaybı ifade eder. Kısaca "zirveden dibe en büyük gerileme" olarak düşünülebilir.</p>
+  <p>Bu ölçünün ayırt edici yanı, kaybı ortalamalar üzerinden değil, gerçekleşmiş en kötü senaryo üzerinden tanımlamasıdır. Bir portföy uzun süre istikrarlı görünse bile, tek bir zorlu dönemde yaşadığı derin gerileme maksimum düşüş rakamına yansır ve orada kalır. Yatırımcının psikolojik dayanıklılığını sınayan da genellikle bu tek dönemdir.</p>
+  <p>Maksimum düşüş yalnızca profesyonel fon analizinde kullanılan teknik bir kavram değildir. Kendi birikimini yöneten bir yatırımcı için de sorulacak soru aynıdır: "Bu portföy, en kötü döneminde bana ne yaşattı ve ben buna katlanabilir miyim?" Bu sorunun yanıtı, çoğu zaman beklenen getiri rakamlarından daha belirleyicidir.</p>
+
+  <h2>Nasıl Hesaplanır? Basit Bir Örnek</h2>
+  <p>Hesaplama mantığı oldukça yalındır. Önce dönem içindeki en yüksek değer (zirve) belirlenir, ardından bu zirveden sonra görülen en düşük değer (dip) bulunur ve aradaki fark zirveye oranlanır:</p>
+  <p><strong>Maksimum Düşüş = (Zirve Değer − Dip Değer) ÷ Zirve Değer × 100</strong></p>
+  <p>Diyelim ki bir portföyün değeri 100 birimden başlayıp 120 birime yükseliyor, ardından 90 birime geriliyor ve sonra tekrar 110 birime çıkıyor. Burada zirve 120, zirveden sonraki dip ise 90'dır. Maksimum düşüş: (120 − 90) ÷ 120 = %25 olarak hesaplanır. Portföyün sonrasında toparlanmış olması bu rakamı değiştirmez; ölçü, yaşanan en derin gerilemeyi kayıt altına alır.</p>
+  <p>Burada gözden kaçan kritik bir ayrıntı vardır: düşüşü telafi etmek, düşüşün kendisinden daha zordur. Aşağıdaki tablo bu asimetriyi göstermektedir.</p>
+  <table>
+    <thead>
+      <tr><th>Yaşanan Düşüş</th><th>Eski Seviyeye Dönmek İçin Gereken Yükseliş</th><th>Asimetrinin Büyüklüğü</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>%10</td><td>%11,1</td><td>Sınırlı</td></tr>
+      <tr><td>%20</td><td>%25</td><td>Hissedilir</td></tr>
+      <tr><td>%30</td><td>%42,9</td><td>Belirgin</td></tr>
+      <tr><td>%50</td><td>%100</td><td>Çok yüksek</td></tr>
+      <tr><td>%70</td><td>%233,3</td><td>Aşırı</td></tr>
+    </tbody>
+  </table>
+  <p>Tablodaki oranlar aritmetik bir zorunluluktur: kayıptan sonra hesaplama daha küçük bir tabandan yapıldığı için, gereken toparlanma orantısız biçimde büyür. Bu nedenle derin düşüşlerden kaçınmak, yüksek getiri aramaktan çoğu zaman daha değerlidir. Aynı mantık, <a href="bilesik-getiri-nedir.html">bileşik getirinin</a> neden kesintisiz bir süreç olarak korunması gerektiğini de açıklar.</p>
+
+  <h2>Maksimum Düşüş ile Volatilite Arasındaki Fark</h2>
+  <p>İki kavram sıkça karıştırılır, ancak farklı sorulara yanıt verirler. <a href="volatilite-nedir.html">Volatilite</a>, getirilerin ortalama etrafındaki genel dalgalanmasını ölçer ve yukarı yönlü hareketleri de hesaba katar. Maksimum düşüş ise yalnızca aşağı yönlü ve gerçekleşmiş bir olayı ölçer.</p>
+  <ul>
+    <li><strong>Yön duyarlılığı:</strong> Volatilite yön ayrımı yapmaz; maksimum düşüş sadece kayba bakar.</li>
+    <li><strong>Zaman bilgisi:</strong> Volatilite dalgalanmanın süresi hakkında bilgi vermez; maksimum düşüş belirli bir zirve-dip aralığına aittir.</li>
+    <li><strong>Deneyim yakınlığı:</strong> Yatırımcının hissettiği rahatsızlık, ortalama sapmadan çok bakiyenin ne kadar gerilediğiyle ilgilidir.</li>
+    <li><strong>Tekillik:</strong> Volatilite tüm dönemi özetler; maksimum düşüş tek bir olayı temsil eder ve bu nedenle örneklem hassasiyeti yüksektir.</li>
+  </ul>
+  <p>Risk ayarlı getiri değerlendirmesinde kullanılan <a href="sharpe-orani-nedir.html">Sharpe oranı</a> volatiliteyi payda olarak kullandığı için, iki portföyün Sharpe oranı benzer olsa bile maksimum düşüşleri çok farklı olabilir. Bu yüzden ölçüler tek başına değil, birlikte okunmalıdır.</p>
+
+  <h2>Toparlanma Süresi: Gözden Kaçan İkinci Boyut</h2>
+  <p>Maksimum düşüş "ne kadar" sorusunu yanıtlar; ancak "ne kadar sürede" sorusu da en az onun kadar önemlidir. Bir portföyün zirve seviyesine geri dönmesi için geçen süreye toparlanma süresi denir. Aynı derinlikteki iki düşüşten biri birkaç ay içinde telafi edilirken diğeri yıllar sürebilir.</p>
+  <p>Toparlanma süresi özellikle belirli bir tarihte nakde ihtiyaç duyacak yatırımcılar için belirleyicidir. Portföy teoride toparlanacak olsa bile, paranın çekilmesi gereken tarih düşüş dönemine denk gelirse, kayıp kalıcı hâle gelir. Bu nedenle hedefin zaman ufkuyla portföyün risk düzeyi arasındaki uyum kritik önemdedir; <a href="finansal-hedef-belirleme.html">finansal hedef belirleme</a> yazımız bu uyumun nasıl kurulduğunu ayrıntılandırır.</p>
+  <p>Kısa vadede ihtiyaç duyulacak tutarların, derin düşüş potansiyeli taşıyan varlıklarda tutulmaması bu nedenle yaygın bir ilkedir. <a href="acil-durum-fonu.html">Acil durum fonu</a> kavramı da doğrudan bu mantığa dayanır.</p>
+
+  <h2>Maksimum Düşüş Portföy Planlamasında Nasıl Kullanılır?</h2>
+  <p>Bu ölçü, geçmişi anlatan bir istatistik olmakla birlikte, geleceğe dönük planlamada üç somut biçimde işe yarar:</p>
+  <ol>
+    <li><strong>Risk toleransının gerçekçi sınanması:</strong> "Yüzde kaç dalgalanmaya katlanabilirim?" sorusu soyuttur. Bunun yerine "Bakiyem bir yıl boyunca yüzde 25 aşağıda kalsa ne yapardım?" sorusu çok daha somut bir yanıt üretir. <a href="risk-profili-belirleme.html">Risk profili belirleme</a> sürecinde bu tür senaryolar sıkça kullanılır.</li>
+    <li><strong>Portföylerin karşılaştırılması:</strong> Benzer getiri üreten iki portföyden düşüşü daha sığ olanı, aynı sonuca daha az sarsıntıyla ulaşmış demektir. Karşılaştırmanın anlamlı olması için aynı dönemin kullanılması şarttır; <a href="karsilastirma-olcutu-benchmark.html">karşılaştırma ölçütü</a> yazımız bu konudaki tuzakları ele alır.</li>
+    <li><strong>Varlık dağılımının kalibrasyonu:</strong> Hedeflenen düşüş sınırı, hisse ve sabit getirili varlıkların ağırlıklarını belirlemede pratik bir kısıt olarak kullanılabilir. Bu, <a href="varlik-dagilimi-nedir.html">varlık dağılımı</a> kararının çıkış noktalarından biridir.</li>
+  </ol>
+  <p>Buna karşılık maksimum düşüşü tek başına bir kalite ölçütü gibi kullanmak yanıltıcıdır. Kısa bir dönemde ölçülen düşük bir düşüş rakamı, portföyün henüz zorlu bir piyasa görmediği anlamına gelebilir. Ölçünün güvenilirliği, gözlem döneminin uzunluğuna ve kapsadığı piyasa koşullarının çeşitliliğine bağlıdır.</p>
+
+  <h2>Sık Yapılan Yorum Hataları</h2>
+  <p>Maksimum düşüş, yanlış okunduğunda güvenlik yanılsaması yaratabilir. En yaygın hatalar şunlardır:</p>
+  <ul>
+    <li><strong>Geçmişi tavan sanmak:</strong> Yaşanmış en büyük düşüş, gelecekteki kaybın üst sınırı değildir. Piyasalar daha önce görülmemiş senaryolar üretebilir.</li>
+    <li><strong>Farklı dönemleri kıyaslamak:</strong> Bir portföyün sakin bir dönemdeki düşüşünü, başka bir portföyün çalkantılı dönemdeki düşüşüyle karşılaştırmak anlamsız bir sonuç verir.</li>
+    <li><strong>Kaldıracı hesaba katmamak:</strong> Kaldıraç kullanımı düşüşün derinliğini doğrudan büyütür ve teminat tamamlama çağrısı nedeniyle toparlanma şansını tümüyle ortadan kaldırabilir. Bu risk için <a href="asiri-kaldirac-tehlikesi.html">aşırı kaldıracın tehlikeleri</a> yazımıza bakabilirsiniz.</li>
+    <li><strong>Düşüş anında planı terk etmek:</strong> En derin düşüşler, çoğu zaman yatırımcının plandan en çok uzaklaştığı anlara denk gelir. <a href="duygusal-yatirim-hatalari.html">Duygusal yatırım hataları</a> bu noktada belirleyici olur.</li>
+  </ul>
+  <p>Cep Portföy olarak yaklaşımımız, riski yalnızca beklenen getiri üzerinden değil, olası düşüş senaryoları üzerinden de konuşmaktır. Çalışma biçimimiz hakkında bilgi almak için <a href="../tr/pages/about.html">Hakkımızda</a> sayfamızı inceleyebilir, sorularınız için <a href="../tr/pages/contact-us.html">İletişim</a> sayfamızdan bize ulaşabilirsiniz.</p>
+
+  <h2>Sık Sorulan Sorular</h2>
+  <div class="faq">
+    <h3>Maksimum düşüş (drawdown) nedir?</h3><p>Maksimum düşüş, bir portföyün veya varlığın belirli bir dönem içinde ulaştığı en yüksek değerden sonraki en düşük değerine kadar yaşadığı yüzdesel kaybı ifade eder. Kısaca zirveden dibe olan en büyük gerilemeyi ölçer.</p>
+    <h3>Maksimum düşüş ile volatilite arasındaki fark nedir?</h3><p>Volatilite, getirilerin ortalama etrafındaki genel dalgalanmasını ölçer ve yukarı yönlü hareketleri de içerir. Maksimum düşüş ise yalnızca aşağı yönlü ve gerçekleşmiş en kötü senaryoya bakar. Bu nedenle yatırımcının deneyimlediği kayıp hissine daha yakın bir ölçüdür.</p>
+    <h3>Yüzde 50 düşen bir portföy eski seviyesine dönmek için ne kadar yükselmelidir?</h3><p>Yüzde 50 değer kaybeden bir portföyün başlangıç seviyesine dönmesi için yüzde 100 yükselmesi gerekir. Bunun nedeni, kaybın ardından hesaplamanın daha küçük bir tabandan yapılmasıdır. Düşüş derinleştikçe gereken toparlanma orantısız biçimde büyür.</p>
+    <h3>Düşük maksimum düşüş her zaman daha iyi midir?</h3><p>Tek başına değerlendirildiğinde yanıltıcı olabilir. Kısa bir gözlem döneminde ölçülen düşük maksimum düşüş, portföyün henüz zorlu bir piyasa dönemi görmediği anlamına gelebilir. Ölçünün anlamlı olması için yeterince uzun ve farklı piyasa koşullarını kapsayan bir dönem gerekir.</p>
+    <h3>Maksimum düşüş gelecekteki kaybın üst sınırı mıdır?</h3><p>Hayır. Maksimum düşüş geçmişte gerçekleşmiş bir değeri gösterir; gelecekte daha büyük bir düşüş yaşanmayacağının güvencesi değildir. Geçmiş veriler gelecek performans için taahhüt oluşturmaz.</p>
+  </div>
+
+  <div class="warn"><strong>Yasal Uyarı:</strong> Bu içerik eğitim ve tanıtım amaçlıdır; yatırım tavsiyesi değildir. Tüm yatırım araçları risk taşır; getiri garantisi verilemez ve geçmiş performans gelecek için güvence değildir. Yatırım kararı öncesi ilgili dokümanları okuyun ve yetkili kuruluşları <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a> üzerinden teyit edin.</div>
+
+  <div class="related"><strong>İlgili:</strong> <a href="volatilite-nedir.html">Volatilite Nedir?</a> · <a href="sharpe-orani-nedir.html">Sharpe Oranı Nedir?</a> · <a href="index.html">Tüm Blog Yazıları</a></div>
+  </article>
+</main>
+<footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="../assets/img/footer-logo1.png" alt="Cep Portfoy" />
+            </div>
+            <nav class="footer-nav">
+              <a href="../tr/">Ana Sayfa</a>
+              <a href="../tr/pages/about.html">Hakkımızda</a>
+              <a href="../tr/pages/contact-us.html">İletişim</a>
+            </nav>
+            <div class="footer-legal">
+              <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+              <a href="../tr/pages/terms.html">Şartlar ve Koşullar</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-copyright">© Cep Portfoy</div>
+            <div class="footer-payment">
+              <a href="https://x.com/cepportfoy"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/cepportfoy/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://wa.me/905368910655" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
