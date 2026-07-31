@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riske Maruz Değer (VaR) Nedir? Nasıl Okunur? | Cep Portföy</title>
+<meta name="description" content="Riske maruz değer (VaR) nedir, nasıl hesaplanır ve nasıl yorumlanır? Güven düzeyi, zaman ufku, VaR'ın sınırları ve stres testi ile ilişkisi bu rehberde.">
+<meta name="keywords" content="riske maruz değer nedir, VaR nedir, value at risk, portföy risk ölçümü, VaR hesaplama yöntemleri">
+<meta name="author" content="Cep Portföy Yönetimi A.Ş.">
+<link rel="canonical" href="https://ceportfoy.net/blog/riske-maruz-deger-var-nedir.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Riske Maruz Değer (VaR) Nedir? Nasıl Okunur? | Cep Portföy">
+<meta property="og:description" content="Riske maruz değer (VaR) nedir, nasıl hesaplanır ve nasıl yorumlanır? Güven düzeyi, zaman ufku, VaR'ın sınırları ve stres testi ile ilişkisi bu rehberde.">
+<meta property="og:url" content="https://ceportfoy.net/blog/riske-maruz-deger-var-nedir.html">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Cep Portföy">
+<meta property="og:image" content="https://ceportfoy.net/assets/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0f5132">
+<link rel="icon" type="image/png" href="../assets/img/icon.png">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/blog.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Riske Maruz Değer (VaR) Nedir? Portföy Riskini Sayıya Dökmek",
+  "description": "Riske maruz değer (VaR) nedir, nasıl hesaplanır ve nasıl yorumlanır? Güven düzeyi, zaman ufku, VaR'ın sınırları ve stres testi ile ilişkisi bu rehberde.",
+  "inLanguage": "tr",
+  "datePublished": "2026-07-31",
+  "dateModified": "2026-07-31",
+  "image": "https://ceportfoy.net/assets/favicon.svg",
+  "author": {"@type": "Organization", "name": "Cep Portföy Yönetimi A.Ş."},
+  "publisher": {"@type": "Organization", "name": "Cep Portföy Yönetimi A.Ş.", "logo": {"@type": "ImageObject", "url": "https://ceportfoy.net/assets/favicon.svg"}},
+  "mainEntityOfPage": "https://ceportfoy.net/blog/riske-maruz-deger-var-nedir.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://ceportfoy.net/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ceportfoy.net/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Riske Maruz Değer (VaR) Nedir? Portföy Riskini Sayıya Dökmek"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Riske maruz değer (VaR) nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Riske maruz değer, belirli bir zaman diliminde ve belirli bir güven düzeyinde bir portföyün en fazla ne kadar değer kaybedebileceğine ilişkin istatistiksel bir tahmindir. Üç bileşeni vardır: tutar, zaman ufku ve güven düzeyi. Bu üçü birlikte belirtilmeden VaR değeri anlamlı biçimde yorumlanamaz."}},
+    {"@type": "Question", "name": "VaR bir kayıp üst sınırı mıdır?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. VaR, belirtilen güven düzeyinin dışında kalan durumlarda kaybın ne kadar büyüyebileceği hakkında bilgi vermez. Yüzde 99 güven düzeyiyle hesaplanan bir VaR, geriye kalan yüzde 1'lik senaryolarda kaybın VaR değerini aşabileceğini söyler; ne kadar aşacağını söylemez."}},
+    {"@type": "Question", "name": "VaR nasıl hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "Yaygın olarak üç yaklaşım kullanılır: geçmiş verilere dayanan tarihsel simülasyon, dağılım varsayımına dayanan parametrik yöntem ve rastgele senaryolar üreten Monte Carlo simülasyonu. Üç yöntem aynı portföy için farklı sonuçlar üretebilir; bu nedenle kullanılan yöntemin bilinmesi önemlidir."}},
+    {"@type": "Question", "name": "VaR ile volatilite arasındaki fark nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Volatilite, getirilerin ortalama etrafındaki genel dalgalanmasını ölçer ve hem yukarı hem aşağı hareketi kapsar. VaR ise yalnızca kayıp tarafına odaklanır ve bu kaybı belirli bir olasılık eşiğinde parasal ya da yüzdesel bir tutar olarak ifade eder."}},
+    {"@type": "Question", "name": "Bireysel yatırımcı VaR'ı nasıl kullanmalı?", "acceptedAnswer": {"@type": "Answer", "text": "Bireysel yatırımcı için VaR, kesin bir tahmin değil bir büyüklük duygusu aracıdır. Portföyün olağan koşullarda ne ölçüde dalgalanabileceğini görmeye yardımcı olur; ancak kriz senaryolarını kapsamadığı için maksimum düşüş ve stres testi gibi tamamlayıcı ölçülerle birlikte değerlendirilmelidir."}}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="top-section blog-top">
+<header>
+        <div class="header-container">
+          <div class="header-left">
+            <div class="logo">
+              <a href="../tr/">
+                <img src="../assets/img/logo1.png" alt="Cep Portfoy" />
+              </a>
+            </div>
+
+            <button class="hamburger" aria-label="Toggle menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="header-right">
+            <nav class="nav-wrapper">
+              <div class="mobile-header">
+                <button class="close-menu" aria-label="Close menu">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <ul class="nav-menu">
+                <li><a href="../tr/">Ana Sayfa</a></li>
+                <li><a href="../tr/pages/about.html">Hakkımızda</a></li>
+                <li class="has-submenu">
+                  <a href="#">Şirket Profili</a>
+                  <ul class="sub-menu">
+                    <li><a href="../tr/pages/terms.html">Şartlar ve Koşullar</a></li>
+                    <li>
+                      <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../tr/pages/contact-us.html">İletişim</a></li>
+                <li class="current"><a href="index.html">Blog</a></li>
+              </ul>
+
+              <a
+                href="https://appzone.ceportfoy.net/#/auth/register"
+                class="cta-button"
+                >Başlayın</a
+              >
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-button" id="languageBtn">
+                <img
+                  src="https://flagcdn.com/w40/tr.png"
+                  alt="English"
+                  id="currentFlag"
+                />
+                <span id="currentLang">Turkish</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+
+              <div class="language-dropdown" id="languageDropdown">
+                <a href="../index.html">
+                  <div class="language-option" data-lang="en" data-flag="gb">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+                    <span>English</span>
+                  </div></a
+                >
+
+                <div class="language-option" data-lang="tr" data-flag="tr">
+                  <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" />
+                  <span>Turkish</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+</div>
+<main>
+  <p class="breadcrumb"><a href="../index.html">Ana Sayfa</a> › <a href="index.html">Blog</a> › Riske Maruz Değer (VaR) Nedir?</p>
+  <article class="post">
+  <h1>Riske Maruz Değer (VaR) Nedir? Portföy Riskini Sayıya Dökmek</h1>
+  <p class="post-meta">Yayın: 31 Temmuz 2026 · Kategori: Risk ve Kaldıraç</p>
+  <p class="lead">"Bu portföy ne kadar riskli?" sorusuna verilen yanıtlar çoğu zaman niteliksel kalır: düşük, orta, yüksek. Riske maruz değer (Value at Risk, kısaca VaR) bu soruyu sayıya dökme girişimidir. Ancak ürettiği tek bir rakam, doğru okunmadığında gerçekte var olmayan bir kesinlik hissi yaratabilir. Bu yazıda VaR'ın ne söylediğini, ne söylemediğini, nasıl hesaplandığını ve hangi ölçülerle birlikte değerlendirilmesi gerektiğini ele alıyoruz.</p>
+
+  <h2>Riske Maruz Değer Ne Anlama Gelir?</h2>
+  <p>Riske maruz değer, belirli bir zaman diliminde ve belirli bir güven düzeyinde bir portföyün en fazla ne kadar değer kaybedebileceğine ilişkin istatistiksel bir tahmindir. Tanım kulağa basit gelir, ancak içinde üç ayrı bileşen barındırır ve bu üçü birlikte belirtilmeden rakam anlamsızdır:</p>
+  <ul>
+    <li><strong>Tutar:</strong> Kaybın parasal ya da yüzdesel büyüklüğü.</li>
+    <li><strong>Zaman ufku:</strong> Bir gün, bir hafta, bir ay gibi ölçüm dönemi.</li>
+    <li><strong>Güven düzeyi:</strong> Tahminin hangi olasılıkla geçerli sayıldığı; genellikle yüzde 95 veya yüzde 99.</li>
+  </ul>
+  <p>Örnek bir okuma şöyledir: "Bir günlük, yüzde 95 güven düzeyindeki VaR değeri portföyün yüzde 2'sidir." Bu cümle şunu söyler: olağan piyasa koşullarında, yüz günün yaklaşık beşinde günlük kaybın portföyün yüzde 2'sini aşması beklenebilir. Dikkat edin — cümle "kayıp en fazla yüzde 2 olur" demiyor; "günlerin çoğunda yüzde 2'yi aşmaz" diyor.</p>
+
+  <h2>VaR Ne Söyler, Ne Söylemez?</h2>
+  <p>VaR'ın en sık yapılan yanlış yorumu, onu bir kayıp tavanı sanmaktır. Oysa VaR, güven düzeyinin dışında kalan senaryolarda kaybın ne kadar büyüyeceği konusunda hiçbir şey söylemez. Yüzde 99 güven düzeyi, geriye kalan yüzde 1'lik durumda kaybın VaR değerini aşabileceğini kabul eder; o kuyruk bölgesinde neler olabileceği VaR'ın kapsamı dışındadır.</p>
+  <p>Bu sınır, VaR'ın neden tek başına yeterli olmadığını açıklar. Kuyruk riskini görmek için, kayıp VaR eşiğini aştığında ortalama kaybın ne olacağını ölçen "koşullu VaR" (beklenen kayıp) gibi tamamlayıcı ölçüler ile geçmişteki en sert düşüşü gösteren <a href="maksimum-dusus-drawdown-nedir.html">maksimum düşüş (drawdown)</a> birlikte kullanılır.</p>
+  <p>Kısacası VaR, olağan günlerin haritasını çizer; olağanüstü günlerin haritasını değil. Portföy riskini değerlendirirken bu ayrımı akılda tutmak, sayıya hak ettiğinden fazla güven duymayı engeller.</p>
+
+  <h2>VaR Nasıl Hesaplanır? Üç Temel Yöntem</h2>
+  <p>Uygulamada yaygın olarak üç yaklaşım kullanılır. Aynı portföy için üçü farklı sonuçlar üretebilir; bu nedenle bir VaR rakamı görüldüğünde hangi yöntemle üretildiği önemlidir.</p>
+  <table>
+    <thead>
+      <tr><th>Yöntem</th><th>Nasıl Çalışır?</th><th>Güçlü Yanı</th><th>Zayıf Yanı</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Tarihsel simülasyon</td><td>Geçmiş getiri verileri doğrudan sıralanır</td><td>Dağılım varsayımı gerektirmez</td><td>Geçmişte yaşanmamış olay hesaba girmez</td></tr>
+      <tr><td>Parametrik (varyans-kovaryans)</td><td>Getirilerin belirli bir dağılıma uyduğu varsayılır</td><td>Hesaplaması hızlı ve sadedir</td><td>Uç olayları olduğundan hafif gösterebilir</td></tr>
+      <tr><td>Monte Carlo simülasyonu</td><td>Çok sayıda rastgele senaryo üretilir</td><td>Karmaşık portföylere uyum sağlar</td><td>Varsayımlara ve hesaplama gücüne bağlıdır</td></tr>
+    </tbody>
+  </table>
+  <p>Üç yöntemin ortak zayıflığı aynıdır: hepsi geçmiş veriye ya da geçmişten türetilmiş varsayımlara dayanır. Piyasa davranışı değiştiğinde, geçmişe bakan her ölçü gecikmeli tepki verir. Bu, <a href="volatilite-nedir.html">volatilite</a> ölçümünde karşılaşılan sınırlamanın aynısıdır.</p>
+
+  <h2>VaR Diğer Risk Ölçüleriyle Nasıl İlişkilenir?</h2>
+  <p>Risk tek bir sayıya sığmaz; bu nedenle VaR'ı bir ölçü ailesinin üyesi olarak düşünmek daha doğrudur:</p>
+  <ul>
+    <li><strong>Volatilite:</strong> Dalgalanmanın genel büyüklüğünü ölçer, yön ayrımı yapmaz. VaR ise yalnızca kayıp tarafına bakar.</li>
+    <li><strong>Beta:</strong> Portföyün piyasa hareketlerine duyarlılığını gösterir; ayrıntı için <a href="beta-katsayisi-nedir.html">beta katsayısı</a> yazımıza bakabilirsiniz.</li>
+    <li><strong>Sharpe oranı:</strong> Alınan risk başına elde edilen getiriyi değerlendirir; <a href="sharpe-orani-nedir.html">Sharpe oranı</a> yazımız bu ölçüyü anlatıyor.</li>
+    <li><strong>Korelasyon:</strong> Portföydeki varlıkların birlikte hareket etme eğilimini gösterir ve VaR hesabının girdilerinden biridir. Bu ilişkiyi <a href="korelasyon-nedir-portfoyde.html">korelasyon</a> yazımızda ele aldık.</li>
+    <li><strong>Maksimum düşüş:</strong> Fiilen yaşanmış en sert zirve-dip kaybını gösterir; VaR'ın kaçırdığı kuyruğu görünür kılar.</li>
+  </ul>
+  <p>Bu ölçüler birbirinin yerine geçmez; birbirini tamamlar. Yalnızca birine bakmak, portföyün riskini tek bir açıdan fotoğraflamak anlamına gelir.</p>
+
+  <h2>VaR'ın Bilinen Sınırları</h2>
+  <p>2008 küresel finans krizinden sonra VaR yoğun biçimde eleştirildi. Eleştirilerin özü, yöntemin kendisinden çok nasıl kullanıldığıyla ilgiliydi. Başlıca sınırlar şunlardır:</p>
+  <ol>
+    <li><strong>Kuyruk körlüğü:</strong> Güven düzeyinin ötesindeki kayıpların büyüklüğü hakkında bilgi vermez.</li>
+    <li><strong>Geçmişe bağımlılık:</strong> Sakin dönemlerin verisiyle hesaplanan VaR, sakin bir gelecek varsayar.</li>
+    <li><strong>Korelasyon varsayımı:</strong> Kriz anlarında varlıklar arası ilişkiler değişir ve çeşitlendirmenin sağladığı koruma beklenenden az olabilir.</li>
+    <li><strong>Likidite ihmali:</strong> Standart VaR, pozisyonun istenen fiyattan kapatılabileceğini varsayar; oysa <a href="likidite-nedir.html">likidite</a> daraldığında bu varsayım geçersizleşir.</li>
+    <li><strong>Yanlış güven duygusu:</strong> Tek bir rakam, riskin yönetildiği izlenimi yaratabilir.</li>
+  </ol>
+  <p>Bu nedenle profesyonel risk yönetiminde VaR genellikle stres testleri ve senaryo analizleriyle birlikte kullanılır. Stres testi, "olasılığı düşük ama etkisi büyük" durumları bilinçli olarak modele sokar ve VaR'ın göremediği bölgeyi aydınlatır.</p>
+
+  <h2>Bireysel Yatırımcı VaR'ı Nasıl Kullanmalı?</h2>
+  <p>Bireysel bir yatırımcının VaR hesabı yapması gerekmez; ancak arkasındaki düşünce biçimi son derece kullanışlıdır. Pratik karşılığı şu sorulardır: "Portföyüm olağan bir kötü ayda ne kadar değer kaybedebilir?" ve "Bu kaybı yaşadığımda planımdan sapmadan devam edebilir miyim?" İkinci sorunun yanıtı, teknik hesaplardan daha belirleyicidir.</p>
+  <p>Bu değerlendirme, <a href="risk-profili-belirleme.html">risk profili belirleme</a> sürecinin özünü oluşturur: risk alma isteği ile risk taşıma kapasitesi farklı şeylerdir. Pozisyon büyüklüğünü belirlerken aynı mantık kullanılır; konuyu <a href="pozisyon-buyuklugu-hesaplama.html">pozisyon büyüklüğü hesaplama</a> yazımızda ayrıntılandırdık. Kaldıraç kullanıldığında ise potansiyel kaybın nasıl büyüdüğünü <a href="kaldirac-nedir.html">kaldıraç nedir</a> yazımızda bulabilirsiniz.</p>
+  <p>Cep Portföy olarak riski tek bir göstergeye indirgemenin doğru olmadığını düşünüyoruz. Bir portföyün dayanıklılığı; varlık dağılımı, ölçüm çeşitliliği ve yatırımcının hedefleriyle uyum üzerinden değerlendirilir. Yaklaşımımız hakkında ayrıntıya <a href="../tr/index.html">ana sayfamızdan</a> ve <a href="../tr/pages/about.html">Hakkımızda</a> sayfamızdan ulaşabilir, sorularınız için <a href="../tr/pages/contact-us.html">İletişim</a> sayfamızdan bize yazabilirsiniz.</p>
+
+  <h2>Sık Sorulan Sorular</h2>
+  <div class="faq">
+    <h3>Riske maruz değer (VaR) nedir?</h3><p>Riske maruz değer, belirli bir zaman diliminde ve belirli bir güven düzeyinde bir portföyün en fazla ne kadar değer kaybedebileceğine ilişkin istatistiksel bir tahmindir. Üç bileşeni vardır: tutar, zaman ufku ve güven düzeyi. Bu üçü birlikte belirtilmeden VaR değeri anlamlı biçimde yorumlanamaz.</p>
+    <h3>VaR bir kayıp üst sınırı mıdır?</h3><p>Hayır. VaR, belirtilen güven düzeyinin dışında kalan durumlarda kaybın ne kadar büyüyebileceği hakkında bilgi vermez. Yüzde 99 güven düzeyiyle hesaplanan bir VaR, geriye kalan yüzde 1'lik senaryolarda kaybın VaR değerini aşabileceğini söyler; ne kadar aşacağını söylemez.</p>
+    <h3>VaR nasıl hesaplanır?</h3><p>Yaygın olarak üç yaklaşım kullanılır: geçmiş verilere dayanan tarihsel simülasyon, dağılım varsayımına dayanan parametrik yöntem ve rastgele senaryolar üreten Monte Carlo simülasyonu. Üç yöntem aynı portföy için farklı sonuçlar üretebilir; bu nedenle kullanılan yöntemin bilinmesi önemlidir.</p>
+    <h3>VaR ile volatilite arasındaki fark nedir?</h3><p>Volatilite, getirilerin ortalama etrafındaki genel dalgalanmasını ölçer ve hem yukarı hem aşağı hareketi kapsar. VaR ise yalnızca kayıp tarafına odaklanır ve bu kaybı belirli bir olasılık eşiğinde parasal ya da yüzdesel bir tutar olarak ifade eder.</p>
+    <h3>Bireysel yatırımcı VaR'ı nasıl kullanmalı?</h3><p>Bireysel yatırımcı için VaR, kesin bir tahmin değil bir büyüklük duygusu aracıdır. Portföyün olağan koşullarda ne ölçüde dalgalanabileceğini görmeye yardımcı olur; ancak kriz senaryolarını kapsamadığı için maksimum düşüş ve stres testi gibi tamamlayıcı ölçülerle birlikte değerlendirilmelidir.</p>
+  </div>
+
+  <div class="warn"><strong>Yasal Uyarı:</strong> Bu içerik eğitim ve tanıtım amaçlıdır; yatırım tavsiyesi değildir. Tüm yatırım araçları risk taşır; getiri garantisi verilemez ve geçmiş performans gelecek için güvence değildir. Yatırım kararı öncesi ilgili dokümanları okuyun ve yetkili kuruluşları <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a> üzerinden teyit edin.</div>
+
+  <div class="related"><strong>İlgili:</strong> <a href="volatilite-nedir.html">Volatilite Nedir?</a> · <a href="maksimum-dusus-drawdown-nedir.html">Maksimum Düşüş (Drawdown) Nedir?</a> · <a href="index.html">Tüm Blog Yazıları</a></div>
+  </article>
+</main>
+<footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="../assets/img/footer-logo1.png" alt="Cep Portfoy" />
+            </div>
+            <nav class="footer-nav">
+              <a href="../tr/">Ana Sayfa</a>
+              <a href="../tr/pages/about.html">Hakkımızda</a>
+              <a href="../tr/pages/contact-us.html">İletişim</a>
+            </nav>
+            <div class="footer-legal">
+              <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+              <a href="../tr/pages/terms.html">Şartlar ve Koşullar</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-copyright">© Cep Portfoy</div>
+            <div class="footer-payment">
+              <a href="https://x.com/cepportfoy"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/cepportfoy/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://wa.me/905368910655" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
