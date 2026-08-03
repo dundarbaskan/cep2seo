@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alfa Katsayısı Nedir? Nasıl Yorumlanır? | Cep Portföy</title>
+<meta name="description" content="Alfa katsayısı nedir, nasıl hesaplanır ve nasıl yorumlanır? Jensen alfası, beta ile ilişkisi, ücretlerin etkisi ve alfayı okurken yapılan hatalar bu rehberde.">
+<meta name="keywords" content="alfa katsayısı nedir, jensen alfası, alfa ve beta farkı, risk ayarlı getiri, fon performans ölçümü">
+<meta name="author" content="Cep Portföy Yönetimi A.Ş.">
+<link rel="canonical" href="https://ceportfoy.net/blog/alfa-katsayisi-nedir.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Alfa Katsayısı Nedir? Nasıl Yorumlanır? | Cep Portföy">
+<meta property="og:description" content="Alfa katsayısı nedir, nasıl hesaplanır ve nasıl yorumlanır? Jensen alfası, beta ile ilişkisi, ücretlerin etkisi ve alfayı okurken yapılan hatalar bu rehberde.">
+<meta property="og:url" content="https://ceportfoy.net/blog/alfa-katsayisi-nedir.html">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Cep Portföy">
+<meta property="og:image" content="https://ceportfoy.net/assets/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0f5132">
+<link rel="icon" type="image/png" href="../assets/img/icon.png">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/blog.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Alfa Katsayısı Nedir? Getirinin Ne Kadarı Beceriden Gelir?",
+  "description": "Alfa katsayısı nedir, nasıl hesaplanır ve nasıl yorumlanır? Jensen alfası, beta ile ilişkisi, ücretlerin etkisi ve alfayı okurken yapılan hatalar bu rehberde.",
+  "inLanguage": "tr",
+  "datePublished": "2026-08-03",
+  "dateModified": "2026-08-03",
+  "image": "https://ceportfoy.net/assets/favicon.svg",
+  "author": {"@type": "Organization", "name": "Cep Portföy Yönetimi A.Ş."},
+  "publisher": {"@type": "Organization", "name": "Cep Portföy Yönetimi A.Ş.", "logo": {"@type": "ImageObject", "url": "https://ceportfoy.net/assets/favicon.svg"}},
+  "mainEntityOfPage": "https://ceportfoy.net/blog/alfa-katsayisi-nedir.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://ceportfoy.net/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ceportfoy.net/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Alfa Katsayısı Nedir? Getirinin Ne Kadarı Beceriden Gelir?"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Alfa katsayısı nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Alfa katsayısı, bir portföyün elde ettiği getirinin, taşıdığı piyasa riski göz önüne alındığında beklenen getiriden ne kadar saptığını gösteren ölçüdür. Pozitif alfa, portföyün riskine göre beklenenden fazla getiri ürettiğini; negatif alfa ise beklenenin altında kaldığını ifade eder."}},
+    {"@type": "Question", "name": "Alfa ile beta arasındaki fark nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Beta, portföyün piyasa hareketlerine duyarlılığını ölçer ve getirinin piyasadan gelen kısmını açıklar. Alfa ise piyasa hareketiyle açıklanamayan artık kısmı gösterir. Kısaca beta 'ne kadar risk alındığını', alfa 'bu riske karşılık ne elde edildiğini' anlatır."}},
+    {"@type": "Question", "name": "Pozitif alfa her zaman iyi yönetim anlamına gelir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Kısa dönemli pozitif alfa şansla da ortaya çıkabilir. Ayrıca alfa, seçilen karşılaştırma ölçütüne göre hesaplandığı için yanlış ölçüt seçimi sonucu yapay biçimde yüksek gösterebilir. Anlamlı bir değerlendirme için uzun dönem, doğru ölçüt ve ücret sonrası veri gerekir."}},
+    {"@type": "Question", "name": "Alfa hesaplanırken ücretler dikkate alınır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Bu, kullanılan veriye bağlıdır. Yatırımcı açısından anlamlı olan, tüm yönetim ücreti ve giderleri düşüldükten sonraki net getiri üzerinden hesaplanan alfadır. Brüt getiriyle hesaplanan alfa, yatırımcının cebine giren sonucu yansıtmaz."}},
+    {"@type": "Question", "name": "Bireysel yatırımcı alfayı nasıl kullanmalı?", "acceptedAnswer": {"@type": "Answer", "text": "Alfayı tek başına bir sıralama aracı olarak değil, tamamlayıcı bir soru kaynağı olarak kullanmak daha doğrudur. Hangi ölçüte göre hesaplandığı, hangi dönemi kapsadığı ve ücretlerden önce mi sonra mı ölçüldüğü sorulmalıdır. Sharpe oranı, beta ve maksimum düşüş ile birlikte değerlendirilmelidir."}}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="top-section blog-top">
+<header>
+        <div class="header-container">
+          <div class="header-left">
+            <div class="logo">
+              <a href="../tr/">
+                <img src="../assets/img/logo1.png" alt="Cep Portfoy" />
+              </a>
+            </div>
+
+            <button class="hamburger" aria-label="Toggle menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="header-right">
+            <nav class="nav-wrapper">
+              <div class="mobile-header">
+                <button class="close-menu" aria-label="Close menu">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <ul class="nav-menu">
+                <li><a href="../tr/">Ana Sayfa</a></li>
+                <li><a href="../tr/pages/about.html">Hakkımızda</a></li>
+                <li class="has-submenu">
+                  <a href="#">Şirket Profili</a>
+                  <ul class="sub-menu">
+                    <li><a href="../tr/pages/terms.html">Şartlar ve Koşullar</a></li>
+                    <li>
+                      <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../tr/pages/contact-us.html">İletişim</a></li>
+                <li class="current"><a href="index.html">Blog</a></li>
+              </ul>
+
+              <a
+                href="https://appzone.ceportfoy.net/#/auth/register"
+                class="cta-button"
+                >Başlayın</a
+              >
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-button" id="languageBtn">
+                <img
+                  src="https://flagcdn.com/w40/tr.png"
+                  alt="English"
+                  id="currentFlag"
+                />
+                <span id="currentLang">Turkish</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+
+              <div class="language-dropdown" id="languageDropdown">
+                <a href="../index.html">
+                  <div class="language-option" data-lang="en" data-flag="gb">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+                    <span>English</span>
+                  </div></a
+                >
+
+                <div class="language-option" data-lang="tr" data-flag="tr">
+                  <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" />
+                  <span>Turkish</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+</div>
+<main>
+  <p class="breadcrumb"><a href="../index.html">Ana Sayfa</a> › <a href="index.html">Blog</a> › Alfa Katsayısı Nedir?</p>
+  <article class="post">
+  <h1>Alfa Katsayısı Nedir? Getirinin Ne Kadarı Beceriden Gelir?</h1>
+  <p class="post-meta">Yayın: 3 Ağustos 2026 · Kategori: Risk ve Kaldıraç</p>
+  <p class="lead">Bir portföy yılı yüzde 30 getiriyle kapattığında akla gelen ilk soru genellikle "iyi mi?" olur. Bu soruya yanıt vermek için tek başına getiri rakamı yetmez; o getirinin ne kadar risk karşılığında ve hangi piyasa koşullarında elde edildiği bilinmelidir. Alfa katsayısı tam olarak bu boşluğu doldurmak için geliştirilmiş bir ölçüdür: getirinin piyasayla açıklanabilen kısmını ayırır ve geriye kalan artığa bakar.</p>
+
+  <h2>Alfa Katsayısı Ne Anlama Gelir?</h2>
+  <p>Alfa, bir portföyün taşıdığı piyasa riski göz önüne alındığında <em>beklenen</em> getiriden ne kadar saptığını gösterir. Mantığı basittir: piyasa yükselirken yükselen bir portföyün getirisinin bir bölümü zaten piyasadan gelmiştir. Alfa, bu payı hesaptan düştükten sonra geriye ne kaldığını sorar.</p>
+  <p>Pozitif alfa, portföyün üstlendiği riske göre beklenenin üzerinde bir sonuç ürettiğini; negatif alfa ise beklenenin altında kaldığını ifade eder. Sıfıra yakın alfa, portföyün aşağı yukarı riskinin gerektirdiği kadar getiri sağladığı anlamına gelir. Literatürde bu ölçü çoğunlukla "Jensen alfası" adıyla anılır.</p>
+  <p>Buradaki kritik ayrıntı şudur: alfa mutlak bir büyüklük değildir. Her zaman bir referansa, yani bir <a href="karsilastirma-olcutu-benchmark.html">karşılaştırma ölçütüne (benchmark)</a> göre hesaplanır. Ölçüt değişirse alfa da değişir. Bu nedenle "alfası yüksek" ifadesi, hangi ölçüte göre olduğu belirtilmediğinde eksik bir cümledir.</p>
+
+  <h2>Alfa Nasıl Hesaplanır?</h2>
+  <p>Alfa hesabı, portföyün gerçekleşen getirisi ile risk düzeyinin gerektirdiği beklenen getirinin karşılaştırılmasına dayanır. Beklenen getiri, üç bileşenden üretilir:</p>
+  <ul>
+    <li><strong>Risksiz getiri:</strong> Hiç piyasa riski almadan elde edilebilecek kabul edilen getiri düzeyi.</li>
+    <li><strong>Piyasa primi:</strong> Karşılaştırma ölçütünün getirisi ile risksiz getiri arasındaki fark.</li>
+    <li><strong>Beta:</strong> Portföyün bu piyasa hareketine duyarlılığı; ayrıntı için <a href="beta-katsayisi-nedir.html">beta katsayısı</a> yazımıza bakabilirsiniz.</li>
+  </ul>
+  <p>Beklenen getiri, risksiz getiriye beta ile ağırlıklandırılmış piyasa priminin eklenmesiyle bulunur. Alfa ise portföyün fiilen elde ettiği getiriden bu beklenen getirinin çıkarılmasıyla elde edilir. Sonuç yüzde olarak ifade edilir ve genellikle yıllıklandırılır.</p>
+  <p>Bu hesabın sağlığı tamamen girdilerin sağlığına bağlıdır. Betası yanlış tahmin edilmiş, ölçütü portföyün gerçek içeriğiyle uyuşmayan ya da çok kısa bir dönemi kapsayan bir hesap, teknik olarak doğru görünse bile yanıltıcı bir alfa üretir.</p>
+
+  <h2>Alfa ile Beta Arasındaki İlişki</h2>
+  <p>Alfa ve beta çoğu zaman birlikte anılır, çünkü aynı denklemin iki ayrı parçasıdır. Aralarındaki iş bölümünü şöyle özetlemek mümkündür:</p>
+  <table>
+    <thead>
+      <tr><th>Ölçü</th><th>Neyi Anlatır?</th><th>Yatırımcı İçin Sorusu</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Beta</td><td>Portföyün piyasayla birlikte hareket etme derecesi</td><td>Ne kadar piyasa riski taşıyorum?</td></tr>
+      <tr><td>Alfa</td><td>Piyasa hareketiyle açıklanamayan artık getiri</td><td>Bu riske karşılık fazladan ne elde ettim?</td></tr>
+      <tr><td>Sharpe oranı</td><td>Toplam dalgalanma başına düşen fazla getiri</td><td>Birim risk başına verim nedir?</td></tr>
+      <tr><td>Maksimum düşüş</td><td>Zirveden dibe en sert değer kaybı</td><td>En kötü dönemde ne yaşandı?</td></tr>
+    </tbody>
+  </table>
+  <p>Bu ölçüler birbirinin yerine geçmez. Yüksek alfa, düşük <a href="sharpe-orani-nedir.html">Sharpe oranıyla</a> bir arada bulunabilir; bu durum, artık getirinin yüksek dalgalanma pahasına elde edildiğine işaret eder. Benzer biçimde pozitif alfa, sert bir <a href="maksimum-dusus-drawdown-nedir.html">maksimum düşüş</a> yaşanmadığı anlamına gelmez.</p>
+
+  <h2>Alfa Okurken Yapılan Dört Yaygın Hata</h2>
+  <p>Alfa, yanlış kullanıldığında en çok yanıltan ölçülerden biridir. Sık karşılaşılan hatalar şunlardır:</p>
+  <ol>
+    <li><strong>Yanlış ölçütle karşılaştırma:</strong> Ağırlıklı olarak sabit getirili varlık taşıyan bir portföyün hisse endeksiyle karşılaştırılması, alfayı olduğundan farklı gösterir. Ölçüt, portföyün gerçek varlık dağılımını yansıtmalıdır.</li>
+    <li><strong>Kısa dönemi kalıcı sanmak:</strong> Birkaç aylık ya da tek yıllık pozitif alfa, istatistiksel olarak rastlantıyla da ortaya çıkabilir. Anlamlı bir değerlendirme için birden fazla piyasa döngüsünü kapsayan bir dönem gerekir.</li>
+    <li><strong>Ücretleri ihmal etmek:</strong> Yatırımcı için anlamlı olan, tüm giderler düşüldükten sonraki net alfadır. Bu konuda <a href="fon-ucretleri.html">fon yönetim ücretleri</a> yazımız hangi kalemlerin getiriyi aşındırdığını ayrıntılandırıyor.</li>
+    <li><strong>Gizli riski görmemek:</strong> Kaldıraç, likiditesi düşük varlıklar ya da yoğunlaşmış pozisyonlar kısa vadede alfa gibi görünen sonuçlar üretebilir. Bu risklerin bir kısmı ancak piyasa döndüğünde ortaya çıkar.</li>
+  </ol>
+
+  <h2>Alfa Kalıcı mıdır? Şans ve Beceri Ayrımı</h2>
+  <p>Finans yazınında en çok tartışılan sorulardan biri, geçmişte alfa üretmiş bir stratejinin bunu sürdürüp sürdüremeyeceğidir. Bu tartışmanın kesin bir yanıtı yoktur; ancak üzerinde geniş ölçüde uzlaşılan birkaç nokta vardır.</p>
+  <p>Birincisi, alfanın sürdürülebilirliği zamanla azalma eğilimindedir: bir yaklaşım yaygınlaştıkça sağladığı avantaj törpülenir. İkincisi, ücretler alfayı doğrudan aşındırır; brüt düzeyde var olan bir artık getiri, giderler sonrası kaybolabilir. Üçüncüsü, kısa örneklem üzerinde ölçülen alfa, şans ile beceriyi ayırt etmeye yetmez.</p>
+  <p>Bu nedenle profesyonel değerlendirmelerde alfa tek başına değil; tutarlılık, süreç şeffaflığı ve risk ölçüleriyle birlikte incelenir. Sorulması gereken soru "alfa pozitif mi?" değil, "bu alfa hangi süreçten doğdu ve tekrarlanabilir bir mantığı var mı?" olmalıdır. Aktif ve pasif yaklaşımların bu konudaki farkını <a href="pasif-aktif-yonetim.html">pasif ve aktif fon yönetimi</a> yazımızda ele aldık.</p>
+
+  <h2>Bireysel Yatırımcı Alfayı Nasıl Kullanmalı?</h2>
+  <p>Bireysel bir yatırımcının alfa hesabı yapması gerekmez. Ancak alfanın ardındaki düşünce biçimi, bir fon ya da strateji değerlendirirken doğrudan işe yarar. Pratik olarak sorulacak sorular şunlardır:</p>
+  <ul>
+    <li>Bu getiri hangi karşılaştırma ölçütüne göre değerlendiriliyor ve ölçüt portföyün içeriğiyle uyumlu mu?</li>
+    <li>Rakam hangi dönemi kapsıyor; tek bir olumlu yılın mı, uzun bir sürecin mi sonucu?</li>
+    <li>Getiri, tüm ücret ve giderler düşülmüş net getiri mi?</li>
+    <li>Aynı dönemde portföyün yaşadığı en sert düşüş neydi?</li>
+  </ul>
+  <p>Bu sorular, pazarlama diliyle üretilmiş performans anlatılarını ayıklamaya yardımcı olur. Özellikle "sürekli piyasanın üzerinde getiri" iddiaları dikkatle karşılanmalıdır; hiçbir meşru yönetim yaklaşımı gelecekteki alfa için garanti veremez. Bu tür vaatlerin neden uyarı işareti olduğunu <a href="garantili-getiri-vaadi-tuzagi.html">garantili getiri vaadi</a> yazımızda anlattık.</p>
+  <p>Cep Portföy olarak performansı tek bir katsayıya indirgemenin yatırımcıyı yanlış yönlendirdiğini düşünüyoruz. Bir portföyün başarısı; hedeflerle uyum, risk ölçülerinin bütünü ve maliyetlerin şeffaflığı üzerinden değerlendirilir. Yaklaşımımızla ilgili ayrıntıya <a href="../tr/index.html">ana sayfamızdan</a> ve <a href="../tr/pages/about.html">Hakkımızda</a> sayfamızdan ulaşabilir, sorularınız için <a href="../tr/pages/contact-us.html">İletişim</a> sayfamızdan bize yazabilirsiniz.</p>
+
+  <h2>Sık Sorulan Sorular</h2>
+  <div class="faq">
+    <h3>Alfa katsayısı nedir?</h3><p>Alfa katsayısı, bir portföyün elde ettiği getirinin, taşıdığı piyasa riski göz önüne alındığında beklenen getiriden ne kadar saptığını gösteren ölçüdür. Pozitif alfa, portföyün riskine göre beklenenden fazla getiri ürettiğini; negatif alfa ise beklenenin altında kaldığını ifade eder.</p>
+    <h3>Alfa ile beta arasındaki fark nedir?</h3><p>Beta, portföyün piyasa hareketlerine duyarlılığını ölçer ve getirinin piyasadan gelen kısmını açıklar. Alfa ise piyasa hareketiyle açıklanamayan artık kısmı gösterir. Kısaca beta "ne kadar risk alındığını", alfa "bu riske karşılık ne elde edildiğini" anlatır.</p>
+    <h3>Pozitif alfa her zaman iyi yönetim anlamına gelir mi?</h3><p>Hayır. Kısa dönemli pozitif alfa şansla da ortaya çıkabilir. Ayrıca alfa, seçilen karşılaştırma ölçütüne göre hesaplandığı için yanlış ölçüt seçimi sonucu yapay biçimde yüksek gösterebilir. Anlamlı bir değerlendirme için uzun dönem, doğru ölçüt ve ücret sonrası veri gerekir.</p>
+    <h3>Alfa hesaplanırken ücretler dikkate alınır mı?</h3><p>Bu, kullanılan veriye bağlıdır. Yatırımcı açısından anlamlı olan, tüm yönetim ücreti ve giderleri düşüldükten sonraki net getiri üzerinden hesaplanan alfadır. Brüt getiriyle hesaplanan alfa, yatırımcının cebine giren sonucu yansıtmaz.</p>
+    <h3>Bireysel yatırımcı alfayı nasıl kullanmalı?</h3><p>Alfayı tek başına bir sıralama aracı olarak değil, tamamlayıcı bir soru kaynağı olarak kullanmak daha doğrudur. Hangi ölçüte göre hesaplandığı, hangi dönemi kapsadığı ve ücretlerden önce mi sonra mı ölçüldüğü sorulmalıdır. Sharpe oranı, beta ve maksimum düşüş ile birlikte değerlendirilmelidir.</p>
+  </div>
+
+  <div class="warn"><strong>Yasal Uyarı:</strong> Bu içerik eğitim ve tanıtım amaçlıdır; yatırım tavsiyesi değildir. Tüm yatırım araçları risk taşır; getiri garantisi verilemez ve geçmiş performans gelecek için güvence değildir. Yatırım kararı öncesi ilgili dokümanları okuyun ve yetkili kuruluşları <a href="https://www.spk.gov.tr" rel="noopener">spk.gov.tr</a> üzerinden teyit edin.</div>
+
+  <div class="related"><strong>İlgili:</strong> <a href="beta-katsayisi-nedir.html">Beta Katsayısı Nedir?</a> · <a href="sharpe-orani-nedir.html">Sharpe Oranı Nedir?</a> · <a href="index.html">Tüm Blog Yazıları</a></div>
+  </article>
+</main>
+<footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="../assets/img/footer-logo1.png" alt="Cep Portfoy" />
+            </div>
+            <nav class="footer-nav">
+              <a href="../tr/">Ana Sayfa</a>
+              <a href="../tr/pages/about.html">Hakkımızda</a>
+              <a href="../tr/pages/contact-us.html">İletişim</a>
+            </nav>
+            <div class="footer-legal">
+              <a href="../tr/pages/privacy.html">Gizlilik Politikası</a>
+              <a href="../tr/pages/terms.html">Şartlar ve Koşullar</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-copyright">© Cep Portfoy</div>
+            <div class="footer-payment">
+              <a href="https://x.com/cepportfoy"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/cepportfoy/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://wa.me/905368910655" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
